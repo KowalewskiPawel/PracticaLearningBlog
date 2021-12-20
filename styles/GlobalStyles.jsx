@@ -9,16 +9,20 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;
-    font-family: ${getFontFamily("Primary")};
+    font-family: ${getFontFamily("primary")};
   }
   
   body {
-    color: ${getColor("White")};
+    color: ${getColor("white")};
     max-width: 100%;
     overflow-x: hidden;
-    background: ${getColor("Dark")};
+    background: ${getColor("dark")};
     font-size: 1.125rem;
     line-height: 1.6;
+
+    & > a {
+        text-decoration: none !important;
+    }
   }
 
   section {
@@ -38,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
         display: inline-block;
         padding: 0.5em 2.5em;
         background: ${getColor("Accent")};
-        color: ${getColor("Dark")};
+        color: ${getColor("dark")};
         text-decoration: none;
         cursor: pointer;
         font-size: 0.8rem;
@@ -57,7 +61,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
-  h1 {
+  h1, span {
     font-size: 4.5rem;
   }
 
@@ -74,21 +78,17 @@ const GlobalStyles = createGlobalStyle`
             font-size: 1.125rem;
         }
 
-        h1 {
+        h1, span {
             font-size: 3rem;
         }
 
         h2 {
             font-size: 2.25rem;
         }
-        
+
         h3 {
             font-size: 1.25rem;
         }
-    }
-
-    a {
-        text-decoration: none !important;
     }
 `;
 

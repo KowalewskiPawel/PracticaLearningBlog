@@ -6,15 +6,13 @@ import theme from "../styles/theme";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header />
-      <ThemeProvider theme={theme}>
-        <main className='container'>
-          <Component {...pageProps} />
-        </main>
-        <GlobalStyles />
-      </ThemeProvider>
-    </>
+      <main className='container'>
+        <Component {...pageProps} />
+      </main>
+      <GlobalStyles />
+    </ThemeProvider>
   );
 }
 

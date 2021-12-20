@@ -1,6 +1,8 @@
+import { keyframes } from "styled-components";
+
 export const fontFamily = {
-  Primary: "Source Sans Pro, sans-serif;",
-  Secondary: "Source Code Pro, monospace;",
+  primary: "Source Sans Pro, sans-serif;",
+  secondary: "Source Code Pro, monospace;",
 };
 
 export const fontWeight = {
@@ -9,10 +11,10 @@ export const fontWeight = {
 };
 
 export const color = {
-  Light: "#fff",
-  White: "rgb(241, 239, 239)",
-  Dark: "#303030",
-  Accent: "#cfff76",
+  light: "#fff",
+  white: "rgb(241, 239, 239)",
+  dark: "#303030",
+  accent: "#cfff76",
 };
 
 export const medias = {
@@ -27,12 +29,24 @@ export const shadows = {
       0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15)`,
 };
 
+export const animations = {
+  blink: keyframes`
+    0% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0;
+    }
+`,
+};
+
 const theme = {
   fontFamily,
   fontWeight,
   color,
   medias,
   shadows,
+  animations,
 };
 
 export default theme;
