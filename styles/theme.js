@@ -1,101 +1,30 @@
 export const fontFamily = {
-  Mulish: "Mulish, sans-serif;",
+  Primary: "Source Sans Pro, sans-serif;",
+  Secondary: "Source Code Pro, monospace;",
 };
 
 export const fontWeight = {
-  extraBold: "900",
-  bold: "800",
-  buttonWeight: "700",
-  regular: "400",
+  bold: "900",
+  regular: "300",
 };
 
 export const color = {
-  ikksBlue: "#1889E9",
-
-  white: "#ffffff",
-  navy: "#1A2847",
-
-  secondaryButtonBorderActive: "#3c4863",
-  secondaryButtonBorderPressed: "#535e75",
-  secondaryButtonBorderDisabled: "#babec8",
-
-  blue_50: "#8CC4F4",
-  blue_40: "#A3D0F6",
-  blue_30: "#BADCF8",
-  blue_20: "#D1E7FB",
-  blue_10: "#E8F3FD",
-  blue_05: "#F5FAFF",
-
-  steel: "#61798B",
-  steel_70: "#90A1AE",
-  steel_60: "#A0AFB9",
-  steel_50: "#B0BCC5",
-  steel_40: "#C0C9D1",
-  steel_30: "#D0D7DC",
-  steel_20: "#DFE4E8",
-
-  success: "#18D4A7",
-  error: "#E01A4F",
-
-  backgroundGradient: `linear-gradient(180deg,
-      #F4FAFF 0%,
-      rgba(255,255,255,0) 100%,
-      #FFFFFF)`,
+  Light: "#fff",
+  White: "rgb(241, 239, 239)",
+  Dark: "#303030",
+  Accent: "#cfff76",
 };
 
 export const medias = {
   mobile: "480px",
   tablet: "768px",
   laptop: "1024px",
-  homeHero: "1150px",
   desktop: "1200px",
 };
 
-export const animations = {
-  rotateSpinner: keyframes`
-      from {
-          transform: rotate(0)
-      }
-      to {
-          transform: rotate(360deg)
-      }
-  `,
-
-  fadeIn: keyframes`
-      from {
-         opacity: 0
-      }
-      to {
-          opacity: 1
-      }
-  `,
-  slideIn: keyframes`
-      from {
-          right: -100%;
-      }
-      to {
-          right: 0%;
-      }`,
-  cardFadeIn: keyframes`
-      from {
-          top: -25px;
-          opacity: 0;
-      }
-      to {
-          top: 0;
-          opacity: 1;
-      }
-  `,
-};
-
 export const shadows = {
-  cardShadow: `3.38443px 55.8976px 80px rgba(97, 121, 139, 0.07),
-    1.71337px 28.2982px 34.875px rgba(97, 121, 139, 0.04725),
-    0.676885px 11.1795px 13px rgba(97, 121, 139, 0.035),
-    0.148069px 2.44552px 4.625px rgba(97, 121, 139, 0.02275)`,
-  buttonShadow: `0px 16px 31px rgba(26, 40, 71, 0.1),
-    0px 6.16296px 9.87407px rgba(26, 40, 71, 0.0607407),
-    0px 1.3037px 2.52593px rgba(26, 40, 71, 0.0392593)`,
+  boxShadow: `0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+      0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15)`,
 };
 
 const theme = {
@@ -103,7 +32,6 @@ const theme = {
   fontWeight,
   color,
   medias,
-  animations,
   shadows,
 };
 
