@@ -10,6 +10,10 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     -ms-overflow-style: none;
     font-family: ${getFontFamily("primary")};
+
+    & > pre {
+      overflow: auto;
+    }
   }
   
   body {
