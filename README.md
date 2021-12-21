@@ -24,3 +24,5 @@ Simple Blog made in Next.js for sharing the educatioal resources mainly related 
 Run `npm start` command.
 
 ### Live Preview
+
+[https://practica-learning-blog.vercel.app/](https://practica-learning-blog.vercel.app/)
