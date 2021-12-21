@@ -116,7 +116,11 @@ As you may see, the first parameter of connect function is the address of our Mo
 
 5. Go back to MongoDB tab and click on "Connect", select the second option called "Connect your application"
 
-6. Then you should see connection link to your database, that looks more or less like that "mongodb+srv://user:<password>@rest.cr5aa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+6. Then you should see connection link to your database, that looks more or less like that
+
+```
+"mongodb+srv://user:<password>@rest.cr5aa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+```
 
 7. Copy and paste this string inside of the .env file like that
 
