@@ -3,7 +3,7 @@
 
 ## About The Project
 
-Simple Blog made in Next.js for sharing the educatioal resources mainly related to coding.
+Simple Blog made in Next.js for sharing the educational resources mainly related to coding.
 
 ### Built With
 
