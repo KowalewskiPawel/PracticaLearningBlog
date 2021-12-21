@@ -77,6 +77,9 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
   }
 
+  code {
+    overflow: auto;
+  }
 
     @media (max-width: ${getMedias("tablet")}) {
         body {
