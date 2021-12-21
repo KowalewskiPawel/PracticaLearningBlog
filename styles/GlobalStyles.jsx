@@ -77,10 +77,6 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
   }
 
-  code {
-    overflow: auto;
-  }
-
     @media (max-width: ${getMedias("tablet")}) {
         body {
             font-size: 1.125rem;
