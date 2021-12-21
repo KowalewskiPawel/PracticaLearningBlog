@@ -9,7 +9,7 @@ Recently I have finished a JavaScript course on freecodecamp.org, but it was muc
 
 <br>
 
-## **Where Should I Start?**
+## Where Should I Start?
 
 <br>
 
@@ -21,7 +21,7 @@ My story with programming or let's say interest in programming started nearly 3 
 
 <br>
 
-## **HTML and CSS - Programming Illusion**
+## HTML and CSS - Programming Illusion
 
 <br>
 
@@ -29,7 +29,7 @@ It shouldn't be a surprise that one of the first websites about programming that
 
 <br>
 
-## **Digging Down The Rabbit Hole**
+## Digging Down The Rabbit Hole
 
 <br>
 
@@ -37,7 +37,7 @@ At that time, I had no clue what are the languages of programming, what were the
 
 <br>
 
-## **Where Am I?**
+## Where Am I?
 
 <br>
 
@@ -45,7 +45,7 @@ I didn't know the core fundamentals and didn't actually understand how things wo
 
 <br>
 
-## **Full-Stack**
+## Full-Stack
 
 <br>
 
@@ -69,7 +69,7 @@ In fact, I have finished that course once before, but because I was so desperate
 
 <br>
 
-## **Read Documentation**
+## Read Documentation
 
 <br>
 
@@ -77,15 +77,15 @@ Many of you, who have some experience with freeCodeCamp's JavaScript course, may
 
 <br>
 
-## **I Couldn't See Anything**
+## I Couldn't See Anything
 
 <br>
 
-console.log, without it coding is like walking through a dark room without any light, just trying to guess where the switch is. This is my third advice for all of you trying to learn JavaScript and most probably other languages as well, use console.log or any other equivalent to it. At first, I couldn't understand why people would hire testers, and spend their precious time on writing a "second" code which will test the main one. It just didn't make any sense to me before. I can't say that I am aware of what Test-Driven Development is right now, but it really helped me to connect the dots and everything seems to have more sense.
+**console.log**, without it coding is like walking through a dark room without any light, just trying to guess where the switch is. This is my third advice for all of you trying to learn JavaScript and most probably other languages as well, use console.log or any other equivalent to it. At first, I couldn't understand why people would hire testers, and spend their precious time on writing a "second" code which will test the main one. It just didn't make any sense to me before. I can't say that I am aware of what Test-Driven Development is right now, but it really helped me to connect the dots and everything seems to have more sense.
 
 <br>
 
-## **What Is Next?**
+## What Is Next?
 
 <br>
 

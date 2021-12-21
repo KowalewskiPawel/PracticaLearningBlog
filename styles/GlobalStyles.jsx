@@ -62,7 +62,6 @@ const GlobalStyles = createGlobalStyle`
 
     strong {
         font-weight: ${getFontWeight("bold")};
-        font-size: 3rem;
     }
     
   h1,h2,h3 {
@@ -71,16 +70,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, span {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 3.75rem;
+    font-size: 2rem;
   }
 
-  h3 {
-    font-size: 1.5rem;
-  }
 
     @media (max-width: ${getMedias("tablet")}) {
         body {
@@ -88,15 +84,11 @@ const GlobalStyles = createGlobalStyle`
         }
 
         h1, span {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
-        h2, strong {
-            font-size: 2.25rem;
-        }
-
-        h3 {
-            font-size: 1.25rem;
+        h2 {
+            font-size: 1.75rem;
         }
     }
 `;
