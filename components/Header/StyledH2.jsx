@@ -9,7 +9,7 @@ import {
 const StyledH2 = styled.h2`
   font-family: ${getFontFamily("secondary")};
   font-weight: ${getFontWeight("regular")};
-  color: ${getColor("dark")};
+  color: ${getColor("white")};
 
   & > span {
     color: ${getColor("accent")};

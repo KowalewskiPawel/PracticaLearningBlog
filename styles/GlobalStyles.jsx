@@ -13,16 +13,41 @@ const GlobalStyles = createGlobalStyle`
   }
   
   body {
-    color: ${getColor("white")};
+    color: ${getColor("light")};
     max-width: 100%;
     overflow-x: hidden;
-    background: ${getColor("dark")};
+    background: ${getColor("white")};
     font-size: 1.125rem;
     line-height: 1.6;
 
     & > a {
         text-decoration: none !important;
     }
+  }
+
+  button {
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    background: ${getColor("accent")};
+    border: none;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+
+  & > p {
+    color: ${getColor("dark")};
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: ${getFontWeight("bold")};
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
   }
 
   section {
@@ -36,24 +61,6 @@ const GlobalStyles = createGlobalStyle`
 
     strong {
         font-weight: ${getFontWeight("bold")};
-    }
-
-    button {
-        display: inline-block;
-        padding: 0.5em 2.5em;
-        background: ${getColor("Accent")};
-        color: ${getColor("dark")};
-        text-decoration: none;
-        cursor: pointer;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: ${getFontWeight("bold")};
-        transition: transform 200ms ease-in-out;
-    }
-
-    button:hover {
-        transform: scale(1.1);
     }
     
   h1,h2,h3 {

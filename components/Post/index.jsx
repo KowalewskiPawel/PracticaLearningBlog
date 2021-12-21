@@ -7,15 +7,16 @@ export default function Post({ post }) {
     <Wrapper>
       <img src={post.frontmatter.cover_image} alt='' />
 
-      <div className='post-date'>Posted on {post.frontmatter.date}</div>
+      <div>Posted on {post.frontmatter.date}</div>
 
       <h3>{post.frontmatter.title}</h3>
 
       <p>{post.frontmatter.excerpt}</p>
-
-      <Link href={`/blog/${post.slug}`}>
-        <a>Read More</a>
-      </Link>
+      <button>
+        <Link href={`/blog/${post.slug}`} passHref>
+          <p>Read More</p>
+        </Link>
+      </button>
     </Wrapper>
   );
 }

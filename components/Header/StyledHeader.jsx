@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   width: 100%;
   height: auto;
   padding: 2rem;
-  background: ${getColor("white")};
+  background-color: ${getColor("dark")};
 `;
 
 export default StyledHeader;
