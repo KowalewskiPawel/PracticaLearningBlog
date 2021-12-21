@@ -280,15 +280,21 @@ export default usersRouter;
 
 10. Start up the application with `npm start` and open [Postman](https://www.postman.com/)
 
-11. Inside of the Postman, add new request, select method as POST, the address should be `http://localhost:5000/users/signup`, click on the "Body" tab, select type "raw" and "JSON" then add the body for example:
+11. Inside of the Postman, add new request, select method as POST, the address should be
+
+````
+http://localhost:5000/users/signup
+```, click on the "Body" tab, select type "raw" and "JSON" then add the body for example:
 
 <br>
 
-```
+````
+
 {
 "username": "John",
 "password": "doe"
 }
+
 ```
 
 <br>
@@ -325,37 +331,41 @@ The names are kind of self-explanatory, indeed the functions themselves are not 
 <br>
 
 ```
+
 // hashPassword.js
 import bcrypt from "bcryptjs";
 
 const hashPassword = async (password) => {
-  try {
-    const salt = await bcrypt.genSalt(10);
-    return await bcrypt.hash(password, salt);
-  } catch (error) {
-    throw new Error("Hashing failed", error);
-  }
+try {
+const salt = await bcrypt.genSalt(10);
+return await bcrypt.hash(password, salt);
+} catch (error) {
+throw new Error("Hashing failed", error);
+}
 };
 
 export default hashPassword;
+
 ```
 
 <br>
 
 ```
+
 // comparePasswords.js
 
 import bcrypt from "bcryptjs";
 
 const comparePasswords = async (inputPassword, hashedPassword) => {
-  try {
-    return await bcrypt.compare(inputPassword, hashedPassword);
-  } catch (error) {
-    throw new Error("Comparison failed", error);
-  }
+try {
+return await bcrypt.compare(inputPassword, hashedPassword);
+} catch (error) {
+throw new Error("Comparison failed", error);
+}
 };
 
 export default comparePasswords;
+
 ```
 
 <br>
@@ -365,9 +375,11 @@ export default comparePasswords;
 <br>
 
 ```
+
 import hashPassword from "./helpers/hashPassword.js";
 
 import comparePasswords from "./helpers/comparePasswords.js";
+
 ```
 
 <br>
@@ -377,7 +389,8 @@ This time we will keep inital user's object in the "user" variable, then we will
 <br>
 
 ```
- user = req.body;
+
+user = req.body;
 
       const hashedPassword = await hashPassword(req.body.password);
 
@@ -386,6 +399,7 @@ This time we will keep inital user's object in the "user" variable, then we will
       const newUser = new User(user);
 
       await newUser.save();
+
 ```
 
 <br>
@@ -417,9 +431,10 @@ We will look for the user in the database and return the corresponding response.
 <br>
 
 ```
+
 async login(req, res) {
-    try {
-      let user = await User.findOne({ username: req.body.username });
+try {
+let user = await User.findOne({ username: req.body.username });
 
       if (!user) {
         return res.status(404).json({
@@ -448,7 +463,9 @@ async login(req, res) {
         message: "Couldn't login. Please try again.",
       });
     }
-  }
+
+}
+
 ```
 
 <br>
@@ -476,22 +493,24 @@ cleanBody.js file should look like that:
 <br>
 
 ```
+
 import sanitize from "mongo-sanitize";
 
 const cleanBody = (req, res, next) => {
-  try {
-    req.body = sanitize(req.body);
-    next();
-  } catch (error) {
-    console.log("clean-body-error", error);
-    return res.status(500).json({
-      error: true,
-      message: "Could not sanitize body",
-    });
-  }
+try {
+req.body = sanitize(req.body);
+next();
+} catch (error) {
+console.log("clean-body-error", error);
+return res.status(500).json({
+error: true,
+message: "Could not sanitize body",
+});
+}
 };
 
 export default cleanBody;
+
 ```
 
 <br>
@@ -501,6 +520,7 @@ Import cleanBody middleware and add in between the route and controller paramete
 <br>
 
 ```
+
 import express from "express";
 import UsersController from "../controllers/UsersController.js";
 const usersRouter = express.Router();
@@ -514,6 +534,7 @@ usersRouter.post("/signup", cleanBody, users.signup);
 usersRouter.post("/login", cleanBody, users.login);
 
 export default usersRouter;
+
 ```
 
 <br>
@@ -527,3 +548,4 @@ Try again running the app, logging, registering etc. Everything should work just
 <br>
 
 Congratulations! It was quite a lot of work, and our REST API finally starts to look like a real REST API, plus deals with some real-world problems. However, there is a still long way to go and many improvements have to be added. Feel free to modify the code and add your own features. In the next article, we will move even further and add JWT token support.
+```
