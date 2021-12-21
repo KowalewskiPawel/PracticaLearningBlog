@@ -120,7 +120,9 @@ As you may see, the first parameter of connect function is the address of our Mo
 
 7. Copy and paste this string inside of the .env file like that
 
-`MONGO_URI="mongodb+srv://admin:<password>@rest.cr4bo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"`
+```
+MONGO_URI="mongodb+srv://admin:<password>@rest.cr4bo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+```
 
 8. Change `<password>` part with your password, and `myFirstDatabase` with the collection name that we gave before in this case it was "restapi"
 
