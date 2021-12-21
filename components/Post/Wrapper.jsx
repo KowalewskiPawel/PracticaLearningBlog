@@ -14,6 +14,10 @@ const Wrapper = styled.div`
   & > * {
     padding: 0.3rem;
   }
+
+  & > button {
+    margin-left: 0.2rem;
+  }
 `;
 
 export default Wrapper;
