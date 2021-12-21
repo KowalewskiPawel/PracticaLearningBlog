@@ -5,6 +5,10 @@ const PostPageWrapper = styled.article`
   color: ${getColor("dark")};
   margin: 2rem;
 
+  & > code {
+    overflow: auto;
+  }
+
   & > p {
     margin: 2rem;
   }

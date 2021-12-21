@@ -5,7 +5,7 @@ import Head from "next/head";
 
 import Post from "../components/Post";
 import Posts from "../components/Posts";
-import sortByDate from "../utils/sortByDate";
+import { sortByDate } from "../utils/sortByDate";
 
 export default function Home({ posts }) {
   return (
