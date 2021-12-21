@@ -15,6 +15,7 @@ export const color = {
   white: "rgb(241, 239, 239)",
   dark: "#303030",
   accent: "#cfff76",
+  black: "#111",
 };
 
 export const medias = {
