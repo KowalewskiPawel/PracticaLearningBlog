@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import Head from "next/head";
 
 import Post from "../components/Post";
+import Posts from "../components/Posts";
 import sortByDate from "../utils/sortByDate";
 
 export default function Home({ posts }) {
@@ -13,11 +14,11 @@ export default function Home({ posts }) {
         <title>Pracitcal Learning</title>
       </Head>
 
-      <div className='posts'>
+      <Posts>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
-      </div>
+      </Posts>
     </div>
   );
 }
