@@ -126,6 +126,7 @@ As you may see, the first parameter of connect function is the address of our Mo
 
 ```
 MONGO_URI="mongodb+srv://admin:<password>@rest.cr4bo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
 ```
 
 8. Change `<password>` part with your password, and `myFirstDatabase` with the collection name that we gave before in this case it was "restapi"
@@ -282,13 +283,15 @@ export default usersRouter;
 
 11. Inside of the Postman, add new request, select method as POST, the address should be
 
-````
+```
 http://localhost:5000/users/signup
-```, click on the "Body" tab, select type "raw" and "JSON" then add the body for example:
+```
+
+, click on the "Body" tab, select type "raw" and "JSON" then add the body for example:
 
 <br>
 
-````
+```
 
 {
 "username": "John",
@@ -548,4 +551,3 @@ Try again running the app, logging, registering etc. Everything should work just
 <br>
 
 Congratulations! It was quite a lot of work, and our REST API finally starts to look like a real REST API, plus deals with some real-world problems. However, there is a still long way to go and many improvements have to be added. Feel free to modify the code and add your own features. In the next article, we will move even further and add JWT token support.
-```
