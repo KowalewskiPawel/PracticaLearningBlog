@@ -33,6 +33,7 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 0.1rem;
     cursor: pointer;
     transition: transform 200ms ease-in-out;
+    margin: 0.5rem;
 
   & > p {
     color: ${getColor("dark")};
@@ -61,6 +62,7 @@ const GlobalStyles = createGlobalStyle`
 
     strong {
         font-weight: ${getFontWeight("bold")};
+        font-size: 3rem;
     }
     
   h1,h2,h3 {
@@ -89,7 +91,7 @@ const GlobalStyles = createGlobalStyle`
             font-size: 3rem;
         }
 
-        h2 {
+        h2, strong {
             font-size: 2.25rem;
         }
 
