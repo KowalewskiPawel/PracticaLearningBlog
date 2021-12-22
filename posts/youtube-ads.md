@@ -25,7 +25,13 @@ What is it? Most of the popular web browsers let us add extra plugins in other w
 
 <br>
 
-First of all, when we visit the main page of YouTube, you will see a huge grid with dozens of recommended videos that can catch our attention and sometimes even very easily take us to the very wrong places ;) Let's get rid of that element first. Go to YouTube main page, and click on settings => Web Developer => Web Developer Tools or simply `CTRL+SHIFT+I`, then click on the "Pick an element" button or `CTRL+SHIFT+C`. It will let you simply hover over the given items on the website and find them easily in the code. The next step is to find some special tag name, id or class attribute of the given element so that we can hide it. Those class names and ids may change over time, so it is better to check it yourself what is the exact name at the time. In my case, at the time of writing this article, the element with a grid has a tag name name called `ytd-rich-grid-renderer`. Then, click on the console tab `(CTRL+SHIFT+K)` and write the following line of code `document.querySelector("ytd-rich-grid-renderer").style.display = 'none';` click enter and the grid element shouldn't be visible anymore.
+First of all, when we visit the main page of YouTube, you will see a huge grid with dozens of recommended videos that can catch our attention and sometimes even very easily take us to the very wrong places ;) Let's get rid of that element first. Go to YouTube main page, and click on settings => Web Developer => Web Developer Tools or simply `CTRL+SHIFT+I`, then click on the "Pick an element" button or `CTRL+SHIFT+C`. It will let you simply hover over the given items on the website and find them easily in the code. The next step is to find some special tag name, id or class attribute of the given element so that we can hide it. Those class names and ids may change over time, so it is better to check it yourself what is the exact name at the time. In my case, at the time of writing this article, the element with a grid has a tag name name called _ytd-rich-grid-renderer_. Then, click on the console tab `(CTRL+SHIFT+K)` and write the following line of code
+
+```
+document.querySelector("ytd-rich-grid-renderer").style.display = 'none';
+```
+
+click enter and the grid element shouldn't be visible anymore.
 
 <br>
 
@@ -33,7 +39,19 @@ First of all, when we visit the main page of YouTube, you will see a huge grid w
 
 <br>
 
-OK, so in the previous part we found a way how to get rid of the grid element, but what about ads? As you know, every ad needs a skip button, but this button may not be clickable for at least the first 5 seconds. There is another trick for this problem. You can also inspect the video player and you will quickly find out that this button is always there, but it is hidden for some amount of time. We do not need to see it even, using DOM manipulation we can click it without showing it. At the time of writing this article, that button has a class name of `ytp-ad-skip-button`, so each time when you see the ad you can open the console and call the following line of code `document.querySelector(".ytp-ad-skip-button").click();` The ads are gone, but we still have the recommended videos on the side visible. The procedure for removing it is very similar to removing the grid, so if you go to the console and input the following line of code `document.querySelector("#secondary-inner").style.display = "none";` the recommended videos bar should be gone.
+OK, so in the previous part we found a way how to get rid of the grid element, but what about ads? As you know, every ad needs a skip button, but this button may not be clickable for at least the first 5 seconds. There is another trick for this problem. You can also inspect the video player and you will quickly find out that this button is always there, but it is hidden for some amount of time. We do not need to see it even, using DOM manipulation we can click it without showing it. At the time of writing this article, that button has a class name of _ytp-ad-skip-button_, so each time when you see the ad you can open the console and call the following line of code
+
+```
+document.querySelector(".ytp-ad-skip-button").click();
+```
+
+The ads are gone, but we still have the recommended videos on the side visible. The procedure for removing it is very similar to removing the grid, so if you go to the console and input the following line of code
+
+```
+document.querySelector("#secondary-inner").style.display = "none";
+```
+
+the recommended videos bar should be gone.
 
 <br>
 

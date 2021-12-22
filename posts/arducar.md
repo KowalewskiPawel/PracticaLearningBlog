@@ -361,7 +361,11 @@ Each Arduino program is composed of two basic parts:
 
 In our case it looks like that:
 
-`void setup() {pinMode(in1, OUTPUT);` pinMode means that we will set a mode for the given pin, inside the brackets, there are two values, first one - in1, is the name of the pin that we are referring to, and the second value - OUTPUT means that we will send some data from Arduino to the target. If there is INPUT written, it means that the given pin would receive a data from a sensor etc.
+```
+void setup() {pinMode(in1, OUTPUT);
+```
+
+pinMode means that we will set a mode for the given pin, inside the brackets, there are two values, first one - in1, is the name of the pin that we are referring to, and the second value - OUTPUT means that we will send some data from Arduino to the target. If there is INPUT written, it means that the given pin would receive a data from a sensor etc.
 
 <br>
 
@@ -379,7 +383,11 @@ pinMode(piezo, OUTPUT);
 
 <br>
 
-`Serial.begin(9600);` Serial is the port that can be used for sending and receiving the data, do you remember those DIGITAL 0 RX and DIGITAL 1 TX pins that we were connecting the Bluetooth module to? It is about their setting. It means that we will open a channel through which data will be exchanged. The number inside the brackets (9600) means that in one second up to 9600 characters can be sent. It is the most frequently used baud rate, as it is the most stable one, the higher the number is, the faster it is, but also more prone to being disturbed by the noise it is. That is why just leave it at 9600. Note: Bluetooth modules are generally set to baud rate 9600 by default, but sometimes you may have to configure it before - check the Bluetooth configuration section.
+```
+Serial.begin(9600);
+```
+
+Serial is the port that can be used for sending and receiving the data, do you remember those DIGITAL 0 RX and DIGITAL 1 TX pins that we were connecting the Bluetooth module to? It is about their setting. It means that we will open a channel through which data will be exchanged. The number inside the brackets (9600) means that in one second up to 9600 characters can be sent. It is the most frequently used baud rate, as it is the most stable one, the higher the number is, the faster it is, but also more prone to being disturbed by the noise it is. That is why just leave it at 9600. Note: Bluetooth modules are generally set to baud rate 9600 by default, but sometimes you may have to configure it before - check the Bluetooth configuration section.
 
 2. `void loop() { }` - As you can guess from the name, it is the part of the program in which everything written inside the curly brackets, will be repeated again and again. That is all, that is needed for any Arduino program to run. Rest is just your own imagination. Before I move to the details in loop and functions, there is one more part that is located at the beginning of our code, right before `void setup() { }`
 
@@ -405,9 +413,23 @@ int piezo = 3;
 
 4. Now let's move back to the loop part.
 
-`void loop() {if (Serial.available() > 0) {` First statement in the loop starts with if, inside the brackets we can see a condition, it says `Serial.available() > 0)` - simply it means, if Serial, in our case Bluetooth module, is available, greater than 0, remember the binary code 1 - true, 0 - false, do the following { } - everything in those curly braces will be executed.
+```
+void loop() {if (Serial.available() > 0) {
+```
 
-`state = Serial.read();` Remember that state variable at the beginning of the code? This is the time when we assign the value to that variable ( = ) so our state variable now is equal to `Serial.read()`, which means that the variable will change according to what is read from the Bluetooth module.
+First statement in the loop starts with if, inside the brackets we can see a condition, it says
+
+```
+Serial.available() > 0)
+```
+
+simply it means, if Serial, in our case Bluetooth module, is available, greater than 0, remember the binary code 1 - true, 0 - false, do the following { } - everything in those curly braces will be executed.
+
+```
+state = Serial.read();
+```
+
+Remember that state variable at the beginning of the code? This is the time when we assign the value to that variable ( = ) so our state variable now is equal to `Serial.read()`, which means that the variable will change according to what is read from the Bluetooth module.
 
 `Stop();` Those two brackets () after a name indicates that it is a function, and it has to be explained somewhere in the code. The same with this one, the first function to be executed in this code is the function named Stop, which will just literary cut off the power from the wheels and make our RC car stop.
 
@@ -417,7 +439,11 @@ int piezo = 3;
 
 `forward();` The first function to be executed
 
-`soundFX(3000.0, 30+400*(1+sin(millis()/5000)));` The second function to be executed, this time with some conditions inside the brackets.
+```
+soundFX(3000.0, 30+400*(1+sin(millis()/5000)));
+```
+
+The second function to be executed, this time with some conditions inside the brackets.
 
 `break;` break means to stop executing this case, you always have to finish each case with `break;` statement.
 
@@ -439,9 +465,17 @@ break;
 
 `void forward()` Again, in order to call a function firstly void should be written, and after a space, name of the function should be written, for example forward(). Inside the curly brackets we can see the explanation of the function.analogWrite(in1, 255); analogWrite means that we are sending a signal, in case we were receiving, it should be written as analogRead. Inside the brackets there are two values (in1 - the name of the pin that we are referring to, and 255 - the value of the electrical wave frequency, that can range from 0 to 255 - 0 means 0%, and 255 means 100%. It can be also written as LOW - 0, HIGH - 255. As you can see, this is the place where you can change the speed of each electric motor.
 
-`analogWrite(in3, 255);` In this way, we can say that by changing pins in1, 2, 3, 4, and values, we can control the side from which the electricity will enter the motors, what will be the voltage, and as a result the speed and direction.
+```
+analogWrite(in3, 255);
+```
 
-`void soundFX(float amplitude, float period)` This is the part that I have found on Arduino official forums, on the topic of SciFi sounds for the Piezo buzzer. You can find this code in the last post, for further explanations you can go to the link below.
+In this way, we can say that by changing pins in1, 2, 3, 4, and values, we can control the side from which the electricity will enter the motors, what will be the voltage, and as a result the speed and direction.
+
+```
+void soundFX(float amplitude, float period)
+```
+
+This is the part that I have found on Arduino official forums, on the topic of SciFi sounds for the Piezo buzzer. You can find this code in the last post, for further explanations you can go to the link below.
 
 https://forum.arduino.cc/index.php?topic=118757.0
 

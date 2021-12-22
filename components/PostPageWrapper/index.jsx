@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { getColor } from "../../styles/utils";
+
+import { getColor, getMedias } from "../../styles/utils";
 
 const PostPageWrapper = styled.article`
-  color: ${getColor("dark")};
   margin: 2rem;
 
   & > pre {
@@ -15,6 +15,22 @@ const PostPageWrapper = styled.article`
 
   & > * {
     margin: 1rem;
+    max-width: 70%;
+  }
+
+  & > a {
+    text-decoration: none !important;
+    color: ${getColor("accent")};
+  }
+
+  & > img {
+    max-width: 50%;
+  }
+
+  @media (max-width: ${getMedias("tablet")}) {
+    & > * {
+      max-width: 100%;
+    }
   }
 `;
 

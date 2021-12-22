@@ -8,15 +8,16 @@ export default function Post({ post }) {
       <img src={post.frontmatter.cover_image} alt='' />
 
       <div>Posted on {post.frontmatter.date}</div>
-
-      <h3>{post.frontmatter.title}</h3>
+      <Link href={`/blog/${post.slug}`} passHref>
+        <h3>{post.frontmatter.title}</h3>
+      </Link>
 
       <p>{post.frontmatter.excerpt}</p>
-      <button>
-        <Link href={`/blog/${post.slug}`} passHref>
+      <Link href={`/blog/${post.slug}`} passHref>
+        <button>
           <p>Read More</p>
-        </Link>
-      </button>
+        </button>
+      </Link>
     </Wrapper>
   );
 }
