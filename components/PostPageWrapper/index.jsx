@@ -23,10 +23,6 @@ const PostPageWrapper = styled.article`
     color: ${getColor("accent")};
   }
 
-  & > img {
-    max-width: 50%;
-  }
-
   @media (max-width: ${getMedias("tablet")}) {
     & > * {
       max-width: 100%;
