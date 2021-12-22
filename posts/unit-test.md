@@ -1,7 +1,7 @@
 ---
 title: "Unit Testing Node.js REST API (MongoDB) with Mocha"
 date: "July 16 2021"
-excerpt: "Imagine yourself registering for a few days long conference about JavaScript. Before you go there, you have to enter your information and get a ticket. Once you reach the conference, security checks your ticket, ID, and give you a special "guest card". With that card, you can enter the conference area, leave it, and come back whenever you want. You don't have to give all of your personal information over and over again, nor show your ticket and ID. How is that? It all thanks to the "guest card". Now think, what if there were no tickets nor "ID cards" for such events. Then you would have to prove your credentials in a very tedious way, every time you enter the area."
+excerpt: "Many of us are focused on writing the code to that extent, we very often tend to forget about testing it. Some of you may say just run the app at check it manually. Well, it may work for some smaller apps, but what if we forget about some edge case or our app simply grow bigger? Not to mention, working on a bigger project in a team. That is why there are even separate teams responsible only for writing tests. Even if you are just a learner or a potential junior dev candidate, it is better to grasp some testing knowledge and start testing your apps. Indeed, there are many more things to be said about testing, as it is a broad topic."
 cover_image: "/assets/posts/unit_testing.png"
 ---
 
@@ -61,7 +61,29 @@ The next step will be configuring the `package.json` file, by adding a new scrip
 
 <br>
 
-Then we have "mocha" which as you may guess, will run the mocha, and after that, we have several flags. `--recurisive` means that mocha will look inside of the subdirectories for testing files, `--exit` will force mocha to stop working once it's done with testing, and `--timeout 10000` will give us more time for the processing time. As our app connects to the database, reads and creates data, it may take some time to finish. If we didn't set this timeout, it would simply crash.
+Then we have "mocha" which as you may guess, will run the mocha, and after that, we have several flags.
+
+```
+--recurisive
+```
+
+means that mocha will look inside of the subdirectories for testing files,
+
+```
+
+--exit
+
+```
+
+will force mocha to stop working once it's done with testing, and
+
+```
+
+--timeout 10000
+
+```
+
+will give us more time for the processing time. As our app connects to the database, reads and creates data, it may take some time to finish. If we didn't set this timeout, it would simply crash.
 
 <br>
 
@@ -85,7 +107,9 @@ Open "app.js" file and add a new variable called "database" right after "port" v
 <br>
 
 ```
+
 let database = process.env.MONGO_URI;
+
 ```
 
 <br>
@@ -93,18 +117,20 @@ let database = process.env.MONGO_URI;
 Now in the part which connects with the database, change the first argument to that variable so it looks more or less like that:
 
 ```
+
 mongoose
-  .connect(database, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-  })
-  .then(() => {
-    console.log("Database connection established");
-  })
-  .catch((err) => {
-    console.error(`ERROR: ${err}`);
-  });
+.connect(database, {
+useNewUrlParser: true,
+useUnifiedTopology: true,
+useFindAndModify: false,
+})
+.then(() => {
+console.log("Database connection established");
+})
+.catch((err) => {
+console.error(`ERROR: ${err}`);
+});
+
 ```
 
 <br>
@@ -114,9 +140,11 @@ Now right above it, add the following code:
 <br>
 
 ```
+
 if (process.env.NODE_ENV === "testing") {
-  database = process.env.MONGO_URI_TEST;
+database = process.env.MONGO_URI_TEST;
 }
+
 ```
 
 <br>
@@ -144,6 +172,7 @@ Inside of the **users.test.js** file, we will have to import a few libraries and
 <br>
 
 ```
+
 import request from "supertest";
 import { expect } from "chai";
 import dotenv from "dotenv";
@@ -152,17 +181,20 @@ dotenv.config();
 import app from "../../app.js";
 
 import User from "../../models/user.model.js";
+
 ```
 
 As we will add new users to the database, lets create some variables that will stay in the global scope of the testing file.
 
 ```
+
 const tempUser = {
-  username: process.env.USER_TEST,
-  password: process.env.USER_TEST_PASSWORD,
+username: process.env.USER_TEST,
+password: process.env.USER_TEST_PASSWORD,
 };
 
 let tempToken;
+
 ```
 
 As you can see, there are two more values that can be added to the ".env" and those are example username and password.
@@ -170,40 +202,44 @@ As you can see, there are two more values that can be added to the ".env" and th
 Just to be on the safe side, and give our app some extra time to establish the database connection let's add a timeout function.
 
 ```
+
 before(function (done) {
-  this.timeout(3000);
-  setTimeout(done, 2000);
+this.timeout(3000);
+setTimeout(done, 2000);
 });
+
 ```
 
 After that, we can add tests functions. Let's start with signing up new users:
 
 ```
-describe("POST users", () => {
-  it("should register new user with valid credentials", (done) => {
-    request(app)
-      .post("/users/signup")
-      .send(tempUser)
-      .expect(201)
-      .then((res) => {
-        expect(res.body.username).to.be.eql(process.env.USER_TEST);
-        done();
-      })
-      .catch((err) => done(err));
-  });
 
-  it("shouldn't accept the username that already exists in the database", (done) => {
-    request(app)
-      .post("/users/signup")
-      .send(tempUser)
-      .expect(400)
-      .then((res) => {
-        expect(res.body.message).to.be.eql("Username is already in use");
-        done();
-      })
-      .catch((err) => done(err));
-  });
+describe("POST users", () => {
+it("should register new user with valid credentials", (done) => {
+request(app)
+.post("/users/signup")
+.send(tempUser)
+.expect(201)
+.then((res) => {
+expect(res.body.username).to.be.eql(process.env.USER_TEST);
+done();
+})
+.catch((err) => done(err));
 });
+
+it("shouldn't accept the username that already exists in the database", (done) => {
+request(app)
+.post("/users/signup")
+.send(tempUser)
+.expect(400)
+.then((res) => {
+expect(res.body.message).to.be.eql("Username is already in use");
+done();
+})
+.catch((err) => done(err));
+});
+});
+
 ```
 
 <br>
@@ -219,60 +255,62 @@ Now you can run the test with the following command `npm run test`. It will auto
 When tests are passing it's time to add new ones. Let's test the "PATCH" methods now:
 
 ```
+
 describe("PATCH users", () => {
-  it("should accept correct credentials", (done) => {
-    request(app)
-      .patch("/users/login")
-      .send(tempUser)
-      .expect(200)
-      .then((res) => {
-        expect(res.body.message).to.be.eql("User logged in successfully");
-        tempToken = `Bearer ${res.body.accessToken}`;
-        done();
-      })
-      .catch((err) => done(err));
-  });
-
-  it("shouldn't accept invalid password", (done) => {
-    tempUser.password = process.env.USER_TEST_PASSWORD + "asdf";
-    request(app)
-      .patch("/users/login")
-      .send(tempUser)
-      .expect(400)
-      .then((res) => {
-        expect(res.body.message).to.be.eql("Invalid password");
-        done();
-      })
-      .catch((err) => done(err));
-  });
-
-  it("shouldn't accept non-exisiting username", (done) => {
-    tempUser.username = process.env.USER_TEST + "asdf";
-    request(app)
-      .patch("/users/login")
-      .send(tempUser)
-      .expect(404)
-      .then((res) => {
-        expect(res.body.message).to.be.eql("Account not found");
-        done();
-      })
-      .catch((err) => done(err));
-  });
-
-  it("should log out users with valid token", (done) => {
-    request(app)
-      .patch("/users/logout")
-      .set({
-        Authorization: tempToken,
-      })
-      .expect(200)
-      .then((res) => {
-        expect(res.body.message).to.be.eql("User logged out");
-        done();
-      })
-      .catch((err) => done(err));
-  });
+it("should accept correct credentials", (done) => {
+request(app)
+.patch("/users/login")
+.send(tempUser)
+.expect(200)
+.then((res) => {
+expect(res.body.message).to.be.eql("User logged in successfully");
+tempToken = `Bearer ${res.body.accessToken}`;
+done();
+})
+.catch((err) => done(err));
 });
+
+it("shouldn't accept invalid password", (done) => {
+tempUser.password = process.env.USER_TEST_PASSWORD + "asdf";
+request(app)
+.patch("/users/login")
+.send(tempUser)
+.expect(400)
+.then((res) => {
+expect(res.body.message).to.be.eql("Invalid password");
+done();
+})
+.catch((err) => done(err));
+});
+
+it("shouldn't accept non-exisiting username", (done) => {
+tempUser.username = process.env.USER_TEST + "asdf";
+request(app)
+.patch("/users/login")
+.send(tempUser)
+.expect(404)
+.then((res) => {
+expect(res.body.message).to.be.eql("Account not found");
+done();
+})
+.catch((err) => done(err));
+});
+
+it("should log out users with valid token", (done) => {
+request(app)
+.patch("/users/logout")
+.set({
+Authorization: tempToken,
+})
+.expect(200)
+.then((res) => {
+expect(res.body.message).to.be.eql("User logged out");
+done();
+})
+.catch((err) => done(err));
+});
+});
+
 ```
 
 <br>
@@ -286,13 +324,15 @@ After finishing the tests, we should get rid of the temporary user that we have 
 <br>
 
 ```
+
 after(async () => {
-  try {
-    await User.deleteOne({ username: process.env.USER_TEST });
-  } catch (err) {
-    console.error(err);
-  }
+try {
+await User.deleteOne({ username: process.env.USER_TEST });
+} catch (err) {
+console.error(err);
+}
 });
+
 ```
 
 <br>
@@ -314,3 +354,7 @@ If everything went OK, you should see something like that:
 <br>
 
 Testing is a huge topic, and we have only scratched the surface. Hopefully, it gave you some idea of how to test your API routes and how to implement also database in it. Don't forget to clean up after each test, and avoid testing on the production database. Stay tuned for more, as in the next tutorial I will teach you how to add email authentication to your application without using any external services such as Firebase or AWS.
+
+```
+
+```

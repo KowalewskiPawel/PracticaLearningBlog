@@ -5,7 +5,7 @@ import Wrapper from "./Wrapper";
 export default function Post({ post }) {
   return (
     <Wrapper>
-      <img src={post.frontmatter.cover_image} alt='' />
+      <img src={post.frontmatter.cover_image} alt={post.title} />
 
       <div>Posted on {post.frontmatter.date}</div>
       <Link href={`/blog/${post.slug}`} passHref>
