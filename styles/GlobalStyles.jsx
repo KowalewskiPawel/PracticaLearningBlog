@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${getColor("light")};
     max-width: 100%;
     overflow-x: hidden;
-    background: ${getColor("white")};
+    background: ${getColor("darkGray")};
     font-size: 1.125rem;
     line-height: 1.6;
 

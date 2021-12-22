@@ -66,7 +66,13 @@ Roll up your sleeves and let us put our hands on React for the first time. When 
 
 <br>
 
-Most of the things look pretty much the same as vanilla JavaScript, with a few key differences. In the `<head>` part, we can see that there are 3 different scripts loaded. The first one is React itself, the second one is React-DOM library, which is responsible for DOM manipulation and the last one is Babel - a JavaScript transcompiler that converts ES6 syntax to make it backwards compatible. We have just one element inside of the `<body>` and it can be anything, as long as we hook up React code to it. In this case React code is in between `<script type="text/babel">` tags. You can easily guess, why it is text/babel since Babel automatically converts this code to make it compatible with older web browsers. That is all for this part, you can try to guess or analyze the whole structure. In the latter part of this article, we will use the second way of creating React applications - setting up React environment, and we will also focus on the details.
+Most of the things look pretty much the same as vanilla JavaScript, with a few key differences. In the `<head>` part, we can see that there are 3 different scripts loaded. The first one is React itself, the second one is React-DOM library, which is responsible for DOM manipulation and the last one is Babel - a JavaScript transcompiler that converts ES6 syntax to make it backwards compatible. We have just one element inside of the `<body>` and it can be anything, as long as we hook up React code to it. In this case React code is in between
+
+```
+<script type="text/babel">
+```
+
+tags. You can easily guess, why it is text/babel since Babel automatically converts this code to make it compatible with older web browsers. That is all for this part, you can try to guess or analyze the whole structure. In the latter part of this article, we will use the second way of creating React applications - setting up React environment, and we will also focus on the details.
 
 <br>
 
@@ -111,11 +117,17 @@ Once we have both Node.js and code editor ready, there is only one missing part 
 
 <br>
 
-`npm install -g create-react-app`
+```
+npm install -g create-react-app
+```
 
 <br>
 
-`npm install` is one of the most common commands that you will use while creating your apps, not just React! So, let us destruct the whole command. Firstly `npm install` - after that we generally write the pack name that we want to add to our local project, however in this case as you can see we also have a flag **-g** what means global, and in this case, the program or pack will be available globally anywhere on our computer, if you use it for adding specific modules to your local project, then you will not need **-g** flag.
+```
+npm install
+```
+
+is one of the most common commands that you will use while creating your apps, not just React! So, let us destruct the whole command. Firstly `npm install` - after that we generally write the pack name that we want to add to our local project, however in this case as you can see we also have a flag **-g** what means global, and in this case, the program or pack will be available globally anywhere on our computer, if you use it for adding specific modules to your local project, then you will not need **-g** flag.
 
 <br>
 
@@ -127,7 +139,9 @@ In this part, we will finally make use of Node.js and create-react-app. First of
 
 <br>
 
-`npx create-react-app <nameofyourapp>`
+```
+npx create-react-app <nameofyourapp>
+```
 
 <br>
 
@@ -147,7 +161,13 @@ The process may take up even a couple of minutes, once its done you should see s
 
 <br>
 
-After that, you should also see a new folder with the name of your application created. Open this folder, or simply type in `cd <nameofyourapp>` in your terminal.
+After that, you should also see a new folder with the name of your application created. Open this folder, or simply type in
+
+```
+cd <nameofyourapp>
+```
+
+in your terminal.
 
 <br>
 
@@ -159,7 +179,11 @@ Once you are in your application's folder, type the following command:
 
 <br>
 
-This command will start a development server, and each time you make any changes in the code, you will see the results in your browser by default under this address: `http://localhost:3000/`
+This command will start a development server, and each time you make any changes in the code, you will see the results in your browser by default under this address:
+
+```
+http://localhost:3000/
+```
 
 <br>
 
@@ -227,7 +251,9 @@ The first two lines define what modules we want to import to the file in this wa
 
 <br>
 
-`import <name of the module> from "where"`
+```
+import <name of the module> from "where"
+```
 
 <br>
 
@@ -235,11 +261,19 @@ Nearly every JavaScript file in our React application will start with importing 
 
 <br>
 
-`import React from 'react';`
+```
+import React from 'react';
+```
 
 <br>
 
-However, as long as **index.js** is the only bridge between **index.html** and the rest of the files, we will need `import ReactDOM from 'react-dom';` only in that file.
+However, as long as **index.js** is the only bridge between **index.html** and the rest of the files, we will need
+
+```
+import ReactDOM from 'react-dom';
+```
+
+only in that file.
 
 <br>
 
@@ -247,7 +281,9 @@ Let us look at the third line
 
 <br>
 
-`const helloWorldElement = <h1>Hello World!</h1>;`
+```
+const helloWorldElement = <h1>Hello World!</h1>;
+```
 
 <br>
 
@@ -259,11 +295,17 @@ On the last line
 
 <br>
 
-`ReactDOM.render(helloWorldElement, document.getElementById("root"));`
+```
+ReactDOM.render(helloWorldElement, document.getElementById("root"));
+```
 
 <br>
 
-we can see a reference to the ReactDOM object, it has a method called **render** which as you may guess, renders the given object to the assigned element. It can be structured like that: `ReactDOM.render(<ElementToRender >, where);`
+we can see a reference to the ReactDOM object, it has a method called **render** which as you may guess, renders the given object to the assigned element. It can be structured like that:
+
+```
+ReactDOM.render(<ElementToRender >, where);
+```
 
 <br>
 
@@ -309,7 +351,11 @@ const someElement = <div className="box">
 
 <br>
 
-As you can see, there are few HTML elements, but all of them are wrapped inside one element called `<div>`. By the way, please pay attention to the attribute `className`. The reason why it is not called simply `class` like it used to be in classical HTML code is that `class` is a reserved word in JavaScript. There are more examples like that, that is why JSX is NOT exactly the same as HTML code, it is very similar but there as some differences. Calling attributes using camelCase is one of the differences. One more important thing to mention is that you can use even one element in JSX, but EVERY element in JSX should have it's closing. `<input type="text />`
+As you can see, there are few HTML elements, but all of them are wrapped inside one element called `<div>`. By the way, please pay attention to the attribute `className`. The reason why it is not called simply `class` like it used to be in classical HTML code is that `class` is a reserved word in JavaScript. There are more examples like that, that is why JSX is NOT exactly the same as HTML code, it is very similar but there as some differences. Calling attributes using camelCase is one of the differences. One more important thing to mention is that you can use even one element in JSX, but EVERY element in JSX should have it's closing.
+
+```
+<input type="text />
+```
 
 <br>
 
@@ -365,7 +411,9 @@ It is a pure JavaScript function, which returns JSX. At the end of the component
 
 <br>
 
-`export default <Module Name>;`
+```
+export default <Module Name>;
+```
 
 <br>
 
@@ -373,7 +421,9 @@ or adding export default before function or class.
 
 <br>
 
-`export default function App() {...}`
+```
+export default function App() {...}
+```
 
 <br>
 
@@ -453,7 +503,11 @@ Firstly, we have to initialize the state object in the constructor method.
 
 <br>
 
-The state is like a regular JavaScript object, so you can use as many properties as you like, and also different types of data as well. You can reach the state's value in your code in this way `{this.state.property}`
+The state is like a regular JavaScript object, so you can use as many properties as you like, and also different types of data as well. You can reach the state's value in your code in this way
+
+```
+{this.state.property}
+```
 
 <br>
 

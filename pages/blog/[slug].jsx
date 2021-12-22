@@ -13,11 +13,11 @@ export default function PostPage({
 }) {
   return (
     <PostPageWrapper>
-      <button>
-        <Link href='/' passHref>
+      <Link href='/' passHref>
+        <button>
           <p>Go Back</p>
-        </Link>
-      </button>
+        </button>
+      </Link>
       <h1>{title}</h1>
       <div className='post-date'>Posted on {date}</div>
       <img src={cover_image} alt={title} />

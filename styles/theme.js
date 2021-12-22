@@ -12,6 +12,7 @@ export const fontWeight = {
 
 export const color = {
   light: "#fff",
+  darkGray: "rgb(30, 30, 30) none repeat scroll 0% 0%",
   white: "rgb(241, 239, 239)",
   dark: "#303030",
   accent: "#cfff76",

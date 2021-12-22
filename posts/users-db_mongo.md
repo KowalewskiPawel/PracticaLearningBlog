@@ -82,11 +82,15 @@ It's finally time to go back to our Node.js app and open the code editor. Feel f
 
 1. Open the folder of the project and install mongoose
 
-`npm i mongoose`
+```
+npm i mongoose
+```
 
 2. Import Mongoose inside of the "app.js" file
 
-`import mongoose from "mongoose";`
+```
+import mongoose from "mongoose";
+```
 
 3. Create a connection with MongoDB via mongoose.connect method
 
@@ -147,11 +151,15 @@ _In case you get an error: ERROR: Error: querySrv ESERVFAI, just wait a little b
 
 1. First of all let's create a new file in the folder "routes" called "usersRouter.js", and then import it inside of the "app.js" file.
 
-`import usersRouter from "./routes/usersRouter.js";`
+```
+import usersRouter from "./routes/usersRouter.js";
+```
 
 2. At the bottom of the file, before `app.listen` add the following line
 
-`app.use("/users", usersRouter);`
+```
+app.use("/users", usersRouter);
+```
 
 That's all for the "app.js" file part, the rest of the logic will be transferred to the usersRouter file.
 
@@ -217,7 +225,11 @@ export default User;
 
 <br>
 
-7. Now it's time to go back to the UsersController.js file and import the User schema `import User from "../models/user.model.js";`
+7. Now it's time to go back to the UsersController.js file and import the User schema
+
+```
+import User from "../models/user.model.js";
+```
 
 8. At this point we can add a method for signing up the users. First of all, we create a new async method with request and result parameters. The method will firstly look for an existing user in our database, in case the username is already taken it will return and send back status "400". Otherwise, it will use User schema to create a new user based on the "body" input and save it in the database. As a result, we can see the details of our newly created user.
 
@@ -323,7 +335,10 @@ Bcrypt is a popular library that helps us to hash different values, and also com
 <br>
 
 1. Install bcryptjs in your project
-   `npm i bcryptjs`
+
+   ```
+   npm i bcryptjs
+   ```
 
 2. Create new folder "helpers" in the "controllers" folder.
 
@@ -421,7 +436,9 @@ Currently, we have only one route in the usersRouter.js file, let's add another 
 
 <br>
 
-`usersRouter.post("/login", users.login);`
+```
+usersRouter.post("/login", users.login);
+```
 
 <br>
 

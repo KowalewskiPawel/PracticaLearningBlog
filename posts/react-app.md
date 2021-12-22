@@ -887,7 +887,7 @@ Type in the following commands:
 <br>
 
 1. `git init`
-2. `copy this line from GitHub (ctrl + shift + v to paste into the terminal)`
+2. **copy this line from GitHub (ctrl + shift + v to paste into the terminal)**
 
 ![github](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uh2n1xk9gby72nakqlly.png)
 

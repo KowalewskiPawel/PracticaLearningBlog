@@ -97,11 +97,15 @@ import express from "express";
 
 To enable this option, open `package.json` file and under `"description"` add the following line
 
-`"type": "module",`
+```
+"type": "module",
+```
 
 Additionally, you can also add the following line
 
-`"start": "node app"`
+```
+"start": "node app"
+```
 
 inside of the `"scripts"` block. This will let you use `npm start` command just like you have probably used before with React for example, otherwise you would have to type `node app` each time in the terminal to execute `app.js` file with Node.js. There is one more detail - Express. Go to the terminal, make sure that your terminal is opened inside of the project folder and type in the following command
 
@@ -115,11 +119,15 @@ Now inside of "app.js" file:
 
 1. Import Express framework
 
-`import express from "express";`
+```
+import express from "express";
+```
 
 2. Initiate express inside of variable called app
 
-`const app = express();`
+```
+const app = express();
+```
 
 3. Add one route "/", and only one method "GET".
 
@@ -238,7 +246,13 @@ then import it with
 
 `import dotenv from "dotenv";`
 
-and set it up with the following line `dotenv.config();`. Now you can create a new file called `.env` inside of the same folder. Inside of the `.env` file add the following line `PORT=5000`. Then go back to the `app.js` file, create a variable called port and assign it to the value from the `.env` file like that `const port = process.env.PORT;` Now you can modify the last line of the code to
+and set it up with the following line `dotenv.config();`. Now you can create a new file called `.env` inside of the same folder. Inside of the `.env` file add the following line `PORT=5000`. Then go back to the `app.js` file, create a variable called port and assign it to the value from the `.env` file like that
+
+```
+const port = process.env.PORT;
+```
+
+Now you can modify the last line of the code to
 
 `app.listen(port);`
 
