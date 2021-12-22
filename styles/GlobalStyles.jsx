@@ -14,6 +14,11 @@ const GlobalStyles = createGlobalStyle`
     & > pre {
       overflow: auto;
     }
+
+    & > a {
+      text-decoration: none !important;
+      color: ${getColor("accent")};
+    }
   }
   
   body {

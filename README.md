@@ -25,4 +25,4 @@ Run `npm start` command.
 
 ### Live Preview
 
-[https://practica-learning-blog.vercel.app/](https://practica-learning-blog.vercel.app/)
+[https://practicalearning.vercel.app/](https://practicalearning.vercel.app/)
