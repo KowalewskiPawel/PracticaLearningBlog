@@ -9,7 +9,7 @@ Simple Blog made in Next.js for sharing the educational resources mainly related
 
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
-- [Styed Components](https://styled-components.com/)
+- [Styled Components](https://styled-components.com/)
 
 ### Prerequisites
 
