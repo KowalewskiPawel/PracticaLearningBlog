@@ -1,8 +1,8 @@
 ---
 title: "Unit Testing Node.js REST API (MongoDB) with Mocha"
 date: "July 16 2021"
-excerpt: "Many of us are focused on writing the code to that extent, we very often tend to forget about testing it. Some of you may say just run the app at check it manually. Well, it may work for some smaller apps, but what if we forget about some edge case or our app simply grow bigger? Not to mention, working on a bigger project in a team. That is why there are even separate teams responsible only for writing tests. Even if you are just a learner or a potential junior dev candidate, it is better to grasp some testing knowledge and start testing your apps. Indeed, there are many more things to be said about testing, as it is a broad topic."
-cover_image: "/assets/posts/unit_testing.png"
+excerpt: "We generally focus on writing the code to that extent, we very often tend to forget about testing it. Some of you may say just run the app and check it manually. Well, it may work for some smaller apps, but what if we forget about some edge case or our app simply grow bigger? Not to mention, working on a bigger project in a team. That is why there are even separate teams responsible only for writing tests. Even if you are just a learner or a potential junior dev candidate, it is better to grasp some testing knowledge and start testing your apps. Indeed, there are many more things to be said about testing, as it is a broad topic."
+cover_image: "/assets/posts/unit_testing.jpg"
 ---
 
 Many of us are focused on writing the code to that extent, we very often tend to forget about testing it. Some of you may say just run the app at check it manually. Well, it may work for some smaller apps, but what if we forget about some edge case or our app simply grow bigger? Not to mention, working on a bigger project in a team. That is why there are even separate teams responsible only for writing tests. Even if you are just a learner or a potential junior dev candidate, it is better to grasp some testing knowledge and start testing your apps. Indeed, there are many more things to be said about testing, as it is a broad topic.

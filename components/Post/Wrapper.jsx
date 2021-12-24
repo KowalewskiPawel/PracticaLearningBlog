@@ -7,6 +7,10 @@ const Wrapper = styled.div`
   box-shadow: ${getShadow("boxShadow")};
   background: ${getColor("dark")};
 
+  & > img {
+    max-height: 70%;
+  }
+
   & > h3 {
     color: ${getColor("accent")};
   }
