@@ -2,7 +2,7 @@
 title: "How to Secure your API's Routes with JWT Token"
 date: "July 14 2021"
 excerpt: "Imagine yourself registering for a few days long conference about JavaScript. Before you go there, you have to enter your information and get a ticket. Once you reach the conference, security checks your ticket, ID, and give you a special 'guest card'. With that card, you can enter the conference area, leave it, and come back whenever you want. You don't have to give all of your personal information over and over again, nor show your ticket and ID. How is that? It all thanks to the 'guest card'. Now think, what if there were no tickets nor 'ID cards' for such events. Then you would have to prove your credentials in a very tedious way, every time you enter the area."
-cover_image: "/assets/posts/jwt_tokens.png"
+cover_image: "/assets/posts/jwt_tokens.jpg"
 ---
 
 Imagine yourself registering for a few days long conference about JavaScript. Before you go there, you have to enter your information and get a ticket. Once you reach the conference, security checks your ticket, ID, and give you a special "guest card". With that card, you can enter the conference area, leave it, and come back whenever you want. You don't have to give all of your personal information over and over again, nor show your ticket and ID. How is that? It all thanks to the "guest card". Now think, what if there were no tickets nor "ID cards" for such events. Then you would have to prove your credentials in a very tedious way, every time you enter the area.

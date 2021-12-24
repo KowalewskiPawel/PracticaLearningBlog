@@ -1,7 +1,7 @@
 ---
 title: "JavaScript - How Did It Start? A Short Story Long of One JavaScript Course"
 date: "December 20 2020"
-excerpt: "Recently I have finished a JavaScript course on freecodecamp.org, but it was much more than just “another” course. I want to share my thoughts about it and JavaScript in general, as I am sure that there are many people in a similar situation. If you feel stuck, hopeless and frustrated, or maybe just curious about learning web development, this text may show you that you are not the only one, and maybe even give some clues."
+excerpt: "JavaScript it the third pillar of web development. Even if HTML and CSS look simple, meeting JavaScript can be an intimidating experience at first. Does it really has to be that hard? Recently I have finished a JavaScript course on freecodecamp.org, but it was much more than just “another” course. I want to share my thoughts about it and JavaScript in general, as I am sure that there are many people in a similar situation. If you feel stuck, hopeless and frustrated, or maybe just curious about learning web development, this text may show you that you are not the only one, and maybe even give some clues."
 cover_image: "/assets/posts/js_how_did_it_start.jpg"
 ---
 

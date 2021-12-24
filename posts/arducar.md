@@ -2,7 +2,7 @@
 title: "How to Build your own RC Car with Arduino - ArduCar"
 date: "March 24 2021"
 excerpt: "Most of us here, write a lot of code and very rarely have any kind of interaction with electronics, which indeed run our codes. Another thing is a common myth that electronics are very difficult to understand and that we need at least an electronic engineer title to get started with it. As a technician, petrolhead and coding enthusiast, Arduino was always somewhere on my list. I also had an RC car when I was a kid and always wanted to buy another one in my adulthood, so now when I have started learning to code, got an Arduino kit, it was the best time to make this childhood dream come true."
-cover_image: "/assets/posts/arducar.png"
+cover_image: "/assets/posts/arducar.jpg"
 ---
 
 ## Electronics and Programming are not that Scary
