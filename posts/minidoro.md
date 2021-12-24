@@ -1,7 +1,8 @@
 ---
 title: "Minidoro Clock - React Native Project with FCC Background"
 date: "March 11 2021"
-excerpt: "Let's be honest, most of us have heard of Pomodoro Technique, I bet that most of you readers also use it on a daily basis and probably a huge part of you made your own version as a project. So what is the matter? Those familiar with FCC curriculum know that project where you have to build your own version of a 25 + 5 clock, and it is where this whole story started."
+excerpt: "This time it won't be a technical explanation, but rather a personal story with a few tips about the differences between React and React Native. Also it will cover the short of how I came up with the idea of creating React Native app.
+Let's be honest, most of us have heard of Pomodoro Technique, I bet that most of you readers also use it on a daily basis and probably a huge part of you made your own version as a project. So what is the matter? Those familiar with FCC curriculum know that project where you have to build your own version of a 25 + 5 clock, and it is where this whole story started."
 cover_image: "/assets/posts/minidoro_clock.jpg"
 ---
 

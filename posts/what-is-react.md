@@ -1,7 +1,7 @@
 ---
 title: "What is React? How to use it and why? React.js basics for beginners in plain English"
 date: "February 28 2021"
-excerpt: "Before answering the questions above, let us have a quick look back into the past and history of JavaScript. Many years ago, JavaScript was very limited in its usage, basically, the only purpose of this language was to add some mechanics or let us call it logic to web pages on the front-end side. Some even did not see it as a proper programming language. However, with very quick changes in social media, the popularization of smartphones and the internet in general, JavaScript got a new life. Since JavaScript, was the only programming language living in the web browsers, there was a need to improve the language itself, create new tools for programmers, and eventually take it outside of the web browser box and let programmers use it also on the back-end side."
+excerpt: "Before answering the questions above, let us have a quick look back into the past and history of JavaScript. Many years ago, JavaScript was very limited in its usage, basically, the only purpose of this language was to add some mechanics or let us call it logic to web pages on the front-end side. Some even did not see it as a proper programming language. However, with very quick changes in social media, the popularization of smartphones and the internet in general, JavaScript got a new life. Since JavaScript, was the only programming language living in the web browsers, there was a need to improve the language itself, and eventually take it outside of the web browser box."
 cover_image: "/assets/posts/what_is_react.jpg"
 ---
 

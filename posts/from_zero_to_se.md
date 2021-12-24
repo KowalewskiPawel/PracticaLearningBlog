@@ -1,7 +1,7 @@
 ---
 title: "From ESL Teacher to a Self-Taught Software Engineer"
 date: "December 19 2021"
-excerpt: "How to change/get a more meaningful job as Software Engineer without a degree and experience? At first sight, it may sound ridiculous and impossible, but with rapid changes in the world and technology surrounding us it may become a necessity for many people around the world. For me it was something more personal, nevertheless there were many ocassions when I was simply losing my hopes for getting a dream job."
+excerpt: "How to change/get a more meaningful job as Software Engineer without a degree and experience? At first sight, it may sound ridiculous and impossible, but with rapid changes in the world and technology surrounding us it may become a necessity for many people around the world. For me it was something more personal, nevertheless there were many ocassions when I was simply losing my hopes for getting a dream job. Long story short, yes I have got a job as Software Engineer without any CS degree, boot camp. It took me more or less 3 years from the first idea to getting a full-time decent job, no one referred me, and everything was happening in Turkey and Poland."
 cover_image: "/assets/posts/expectations.jpg"
 ---
 

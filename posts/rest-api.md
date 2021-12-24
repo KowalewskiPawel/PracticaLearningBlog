@@ -1,7 +1,7 @@
 ---
 title: "Create Minimalistic REST API using Node.js and Express"
 date: "July 11 2021"
-excerpt: "Nowadays, the word **API** becomes more and more popular as we live in the era of the Information Age. Doesn't matter if you are a coder or not, probably you have heard the word **API** at least a couple of times. Especially if you are a coder, APIs are all around code in many different forms, therefore it's good to know something about them. Indeed there are many different types of APIs, and the word API stands for _application programming interface_, while REST means _representational state transfer_, and this type of API will be the main focus of this article."
+excerpt: "Nowadays, the word API becomes more and more popular as we live in the era of the Information Age. Doesn't matter if you are a coder or not, probably you have heard the word API at least a couple of times. Especially if you are a coder, APIs are all around code in many different forms, therefore it's good to know something about them. Indeed there are many different types of APIs, and the word API stands for 'application programming interface', while REST means 'representational state transfer', and this type of API will be the main focus of this article. Don't worry if those words do not mean too much to you at this point."
 cover_image: "/assets/posts/rest_api.jpg"
 ---
 

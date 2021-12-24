@@ -1,7 +1,7 @@
 ---
 title: "Increase Your Productivity with YouTube and a Few Lines of JS Code"
 date: "May 15 2021"
-excerpt: "YouTube is a great platform that allows us to find information nearly about anything. Unfortunately, it is also a huge time waster as it can easily distract us with the proposed content or with the ads. What if we still want to use it in a possibly most productive way, without paying anything extra for subscription or premium extensions to your browser? There is a very simple solution to that problem! You can get rid of both ads and distracting content with just a few lines of code*."
+excerpt: "YouTube is a great platform that allows us to find information nearly about anything. Unfortunately, it is also a huge time waster as it can easily distract us with the proposed content or with the ads. What if we still want to use it in a possibly most productive way, without paying anything extra for subscription or premium extensions to your browser? There is a very simple solution to that problem! You can get rid of both ads and distracting content with just a few lines of code*. This tutorial will be focused on Firefox Web Browser, but you can still apply nearly the same techniques in different web browsers."
 cover_image: "/assets/posts/youtube_ads.jpg"
 ---
 
