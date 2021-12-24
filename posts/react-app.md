@@ -1,7 +1,7 @@
 ---
 title: "From Scratch to Working App - Building a React Library App"
 date: "March 1 2021"
-excerpt: "While learning web development, one of the most common patters for building projects is building a To-Do apps. Why is it like that? Most probably because this kind of applications, even though very simple, can help you review the knowledge of the core syntax and functions. There should be an event handler, some kind of state, and DOM manipulation. As a result on the web, we can find millions of To-Do apps. Why not take this idea and change it a bit to bring some fresh air into the room? That is how the Books Library App came to mind as an idea for this tutorial."
+excerpt: "While learning web development, one of the most common patters for building projects is building a To-Do apps. Why is it like that? Most probably because this kind of applications, even though very simple, can help you review the knowledge of the core syntax and functions. There should be an event handler, some kind of state, and DOM manipulation. As a result on the web, we can find millions of To-Do apps. Why not take this idea and change it a bit to bring some fresh air into the room? That is how the Books Library App came to mind as an idea for this tutorial. In this tutorial, you will learn how to create a React application from a scratch, upload it to GitHub, and deploy it."
 cover_image: "/assets/posts/react_app.jpg"
 ---
 
@@ -9,7 +9,7 @@ While learning web development, one of the most common patters for building proj
 
 <br>
 
-In this tutorial, we will learn how to create a React application from a scratch, commit it to GitHub and deploy it to [Netlify](https://netlify.app/). I also assume that you have your development environment set up and already familiar with:
+In this tutorial, you will learn how to create a React application from a scratch, upload it to GitHub, and deploy it to [Netlify](https://netlify.app/). I also assume that you have your development environment set up and already familiar with:
 
 <br>
 

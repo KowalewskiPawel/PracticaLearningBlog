@@ -1,7 +1,7 @@
 ---
 title: "Users Database with Login and Signup Functions from Scratch (Node.js, MongoDB)"
 date: "July 12 2021"
-excerpt: "Recently in one of my tutorials, you could read how to create a super simple REST API using Node.js and Express, and if you have missed that one you can find it here. But what is the purpose of having REST API without any database? In this tutorial, we will focus on adding MongoDB to REST API from the previous tutorial and build a simple user database with signup and login functions."
+excerpt: "What is the purpose of having REST API without any database? In this tutorial, we will build a simple user database with signup and login functions. One of the most traditional paths, in this case, would be to create an SQL type of database, configure a local server, and add some ORM layer for establishing communication between the API and database. Additionally, we should also learn at least the basic syntax of SQL. Fortunately, there is also an alternative way to stay within JavaScript 'comfort zone' and minimize the configuration part. It's all thanks to NoSQL databases, and to be more precise MongoDB."
 cover_image: "/assets/posts/node_mongo.jpg"
 ---
 
