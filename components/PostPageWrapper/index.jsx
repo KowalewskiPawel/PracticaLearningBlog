@@ -24,8 +24,10 @@ const PostPageWrapper = styled.article`
   }
 
   @media (max-width: ${getMedias("tablet")}) {
+    margin: 0.5rem;
+
     & > * {
-      max-width: 100%;
+      max-width: 90%;
     }
   }
 `;
