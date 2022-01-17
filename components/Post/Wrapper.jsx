@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   border-radius: 10px;
   box-shadow: ${getShadow("boxShadow")};
   background: ${getColor("dark")};
+  cursor: pointer;
 
   & > img {
     max-height: 70%;
