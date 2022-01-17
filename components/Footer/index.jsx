@@ -1,9 +1,14 @@
-import StyledFooter from "./StyledFooter";
+import dynamic from "next/dynamic";
+
+const DynamicStyledFooter = dynamic(() => import("./StyledFooter"), {
+  ssr: false,
+});
+
 import StyledIcon from "./StyledIcon";
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <DynamicStyledFooter>
       <a href='mailto:pawelkowalewsk@gmail.com'>pawelkowalewsk@gmail.com</a>
       <ul>
         <li>
@@ -36,7 +41,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-    </StyledFooter>
+    </DynamicStyledFooter>
   );
 };
 
