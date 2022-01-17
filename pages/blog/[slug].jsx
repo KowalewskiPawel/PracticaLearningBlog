@@ -3,8 +3,12 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
-import PostPageWrapper from "../../components/PostPageWrapper";
+const DynamicPostPageWrapper = dynamic(
+  () => import("../../components/PostPageWrapper"),
+  { ssr: false }
+);
 
 export default function PostPage({
   frontmatter: { title, date, cover_image },
@@ -12,7 +16,7 @@ export default function PostPage({
   content,
 }) {
   return (
-    <PostPageWrapper>
+    <DynamicPostPageWrapper>
       <Link href='/' passHref>
         <button>
           <p>Go Back</p>
@@ -22,7 +26,7 @@ export default function PostPage({
       <div className='post-date'>Posted on {date}</div>
       <img src={cover_image} alt={title} />
       <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-    </PostPageWrapper>
+    </DynamicPostPageWrapper>
   );
 }
 

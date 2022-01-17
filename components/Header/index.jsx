@@ -1,12 +1,16 @@
-import StyledHeader from "./StyledHeader";
-import StyledH2 from "./StyledH2";
+import dynamic from "next/dynamic";
+
+const DynamicStyledHeader = dynamic(() => import("./StyledHeader"), {
+  ssr: false,
+});
+const DynamicStyledH2 = dynamic(() => import("./StyledH2"), { ssr: false });
 
 export default function Header() {
   return (
-    <StyledHeader>
-      <StyledH2>
+    <DynamicStyledHeader>
+      <DynamicStyledH2>
         Practical Learning Blog<span>|</span>
-      </StyledH2>
-    </StyledHeader>
+      </DynamicStyledH2>
+    </DynamicStyledHeader>
   );
 }
