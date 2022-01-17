@@ -105,6 +105,8 @@ After installing all of the dependencies your package.json file should look more
 
 If some of the libraries are missing, feel free to install them manually. Now it's also the time to open the editor in the given directory (`code .` command should open VS Code). When you check the content of the directory you should see 3 new folders:
 
+<br>
+
 - contracts
 - scripts
 - test
@@ -120,12 +122,15 @@ In the first one, we will add Solidity code which will be later compiled to the 
 <br>
 
 Finally, it's the time when we finally start to write some code in another language - Solidity, that will eventually live on the blockchain. But hey, what is Solidity? Solidity is a programming language that looks very similar to JavaScript, but with a few major differences:
+
 <br>
 
 - Statically typed
 - Object Oriented
 - Compiled
+
   <br>
+
   Even though, it's a completely different language, if you have experience with JavaScript or other similar language, you should be familiar with 80% of the syntax. Now, open `contracts` folder and create a new file called `HelloWorldToken.sol`. Inside of this file add the following code:
 
 <br>
@@ -159,6 +164,7 @@ contract HelloWorldToken {
 <br>
 
 Just take a while and study the code, if you are familiar with programming in general the code shouldn't be very difficult to understand. There are a few things that may look odd though:
+
 <br>
 
 - First two lines indicate the license and Solidity compiler version
@@ -180,8 +186,19 @@ Like it was mentioned before, Solidity is a compiled language and has to be comp
 
 ## Is ABI an API?
 
-When it comes to the traditional apps, we have something called API (Application Programming Interface) which is a way of interacting with a given code between two abstract environments. In the world of Web3 a very similar pattern exists, but here it's called ABI (Application Binary Interface) which is in fact some sort of a lower level of API. When we compile our contract, a new directory is created in the root of the project, and when you go to the <br>
-`./artifacts/contracts/HelloWorldToken.sol/HelloWorldToken.json` <br> you will see that there a json file with a set of instructions and the bytecode of our application. Using this set of instructions, we will interact with the smart contract, after it's deployment to the blockchain.
+<br>
+
+When it comes to the traditional apps, we have something called API (Application Programming Interface) which is a way of interacting with a given code between two abstract environments. In the world of Web3 a very similar pattern exists, but here it's called ABI (Application Binary Interface) which is in fact some sort of a lower level of API. When we compile our contract, a new directory is created in the root of the project, and when you go to the
+
+<br>
+
+```
+./artifacts/contracts/HelloWorldToken.sol/HelloWorldToken.json
+```
+
+<br>
+
+you will see that there a json file with a set of instructions and the bytecode of our application. Using this set of instructions, we will interact with the smart contract, after it's deployment to the blockchain.
 
 <br>
 
@@ -190,6 +207,7 @@ When it comes to the traditional apps, we have something called API (Application
 <br>
 
 Do you remember that blockchain is **immutable** ? Well, this is one of the reasons why we have to be very careful and test our contract before deploying it to the blockchain. Moreover, as you know our contracts may be related with a huge money, so the smallest mistake in the code may cost millions. Fortunately, we can test our contract without need to pay for anything or even without deploying it to the blockchain. Instead, we can create a local blockchain on our computer, that will simulate the real one, and execute the functions and test on this local instance. Hardhat also comes with the necessary tools, so it will deal with all of the logic of creating the local blockchain behind the scenes. Go to the `test` folder and create a new file called **HelloWorldToken.test.js**. Inside of this file you can add the following code:
+
 <br>
 
 ```
@@ -243,7 +261,11 @@ describe("HelloWorldToken", function () {
 
 After that, go back to the terminal and run the test by executing the following command `npx hardhat test`
 
+<br>
+
 ## Predeployment
+
+<br>
 
 Our Solidity code is ready and compiled, tests are passing, but still it's available only on our local machine, so what is the purpose of it? It's like having website only on our hard drive. To let others interact with it, we have to deploy it to the real blockchain, and to do that we will need a crypto wallet and some blockchain node. We need the first one, to pay for the deployment as deployment process is a "write" operation, and it does introduce changes to the blockchain which have to be approved by all of the supporters what generates costs. We also need a blockchain node, to connect with a given network and upload our code from our computer to the blockchain network. In fact there are many wallets, and node providers but for the sake of simplicity we will stick to Metamask, Alchemy, and Ethereum Rinkeby Test Network. First of all we have to create a Metamask wallet, the process is super simple but if you have some problems you can just follow the guid that can be found [here](https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask). After setting up the Metamask account, there is one more important detail, as we are not going to deploy our application to the Ethereum Mainnet because every operation there costs real Ethereum and real money. Instead we are going to use Ethereum Rinkeby testnet, which just like name says is just a test version of Ethereum network, where we also have to pay for the operations, but we can get some free test Ethereum from a faucet. Before we get some free test Ethereum, we should switch to the test network in our Metamask - to do that just click on the Metamask extension, click networks and select Rinkeby. If you cannot see any test networks, you may need to turn them on from the options. Nevertheless, you should see something like on the picture below.
 
@@ -303,6 +325,8 @@ For now, you can skip the CONTRACT_ADDRESS key, while the API_URL and API_KEY ca
 
 ## Deployment
 
+<br>
+
 Now, it's final time to deploy our smart contract to the blockchain, there is only one more file to add and we are ready to deploy. Open scripts folder and create a file called `deploy.js`, inside of it add the following code.
 
 <br>
@@ -329,11 +353,17 @@ Now, it's final time to deploy our smart contract to the blockchain, there is on
 
 The last point is executing a following command:
 
+<br>
+
 ```
 npx hardhat run scripts/deploy.js --network rinkeby
 ```
 
+<br>
+
 After that you should see something like that:
+
+<br>
 
 ```
 Contract deployed to address: 0xc8B329B720bD37aAb9A4B2D9Fe61AF3d4EF8C4eb
