@@ -2,8 +2,14 @@ import styled from "styled-components";
 
 import { getColor, getMedias } from "../../styles/utils";
 
-const PostPageWrapper = styled.article`
-  margin: 2rem;
+const PostPageArticle = styled.article`
+  margin: 2rem auto 2rem 25rem;
+  width: 80%;
+
+  @media (max-width: ${getMedias("desktop")}) {
+    margin: 2rem;
+    width: 90%;
+  }
 
   & > pre {
     overflow: auto;
@@ -32,4 +38,4 @@ const PostPageWrapper = styled.article`
   }
 `;
 
-export default PostPageWrapper;
+export default PostPageArticle;
