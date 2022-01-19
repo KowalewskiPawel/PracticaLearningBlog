@@ -9,11 +9,11 @@ cover_image: "/assets/posts/web3token.jpg"
 
 <br>
 
-Before we dive into the code and start building our own crypto token, let's answer briefly the question what is the whole idea behind the WEB3, Cryptocurrencies, Decentralization, NFTs etc. Currently we are in so-called era of Web 2.0, what simply means that unlike WEB 1.0, where we could mainly read chunks of information from the web, now we can also interact with each other, and add our own blocks to this puzzle in form of posts, pictures, videos, or even likes. The problem here is that firstly we have to use some kind of 3rd party provider, and as a result the hosting service between us, holds our data. This leads to various issues, such as privacy concerns, ownership concerns, incompatibility with other services and so on. WEB3 on the other hand, tries to solve these issue, at least in some way. If you remember P2P networks such as Torrents, that used to be very infamous years ago, than you may already have a clue of what WEB3 is. Indeed, it's not a super revolutionary technology, rather it's just going back to the roots of the Internet and peer to peer connections where chunks of data are copied and spread among users of the given network. Additionally, blockchain is used at the top of it, to add another layer of security and **Immutability**. Blockchain in a most simplified form, is a kind of a Virtual Machine that runs on all of the supporter nodes (blockchain nodes), also very often called **miners** who store and process the whole data in exact same way. In other words, it can be said that blockchain is a state machine, that's state is maintained by all of the nodes in the given network. There are many networks like that, and they can be supported just by a few computers, up to thousands of them - Bitcoin for example.
+Before we dive into the code and start building our own crypto token, let's answer briefly the question what is the whole idea behind the WEB3, Cryptocurrencies, Decentralization, NFTs etc. Currently we are in so-called era of Web 2.0, what simply means that unlike WEB 1.0, where we could mainly read chunks of information from the web, now we can also interact with each other, and add our own blocks to this puzzle in form of posts, pictures, videos, or even likes. The problem here is that firstly we have to use some kind of 3rd party provider, and as a result the hosting service between us, holds our data. This leads to various issues, such as privacy concerns, ownership concerns, incompatibility with other services, and so on. WEB3 on the other hand, tries to solve these issues, at least in some way. If you remember P2P networks such as Torrents, that used to be very infamous years ago, than you may already have a clue of what WEB3 is. Indeed, it's not a super revolutionary technology, rather it's like just going back to the roots of the Internet, and peer to peer connections where chunks of data are copied and spread among users of the given network. Additionally, blockchain is used at the top of it, to add another layer of security and **Immutability**. Blockchain in a most simplified form, is a kind of a Virtual Machine that runs on all of the supporter nodes (blockchain nodes), also very often called **miners** who store and process the whole data in the exact same way. In other words, it can be said that blockchain is a machine of state, and that machine's state is maintained by all of the nodes in the given network. There are many networks like that, and they can be supported just by a few computers, up to thousands of them - Bitcoin for example.
 
 <br>
 
-**Decentralization** is another keyword here, as we have to store the same data on all of the computers that support the given network (miners), instead of having one source of truth like it takes places in case of centralized solutions (web 2.0). It's not a perfect solution, as it may lead to a huge energy consumption, it's very expensive and slow because every action that modifies the state, has to approved by the whole network and updated on every single computer supporting the network. Additionally, there is also hashing and finding the cryptographic solution to link the another block to the blockchain - what is the main reason why bitcoin miners spend so much money on the most fancy graphic cards. On the other hand, we get an ultimate security layer - the more computers there are in the network, the harder it gets to manipulate the data and attack the network. Most probably it is also one of the reason why Bitcoin and few other big cryptocurrencies are so expensive. Their value also derives from the scale of how many computers are supporting them, how many people had to spend a lot of money and time for the equipment, electricity, and the Internet bills.
+**Decentralization** is another keyword here, as we have to store the same data on all of the computers that support the given network (miners), instead of having one source of truth like it takes places in case of centralized solutions (web 2.0). It's not a perfect solution, as it may lead to a huge energy consumption, it's very expensive and slow because every action that modifies the state, has to be approved by the whole network, and updated on every single computer supporting the network. Additionally, we also have to hash the data, and find the solution of the next block to link it with the previous one - what is the main reason why bitcoin miners spend so much money on the most fancy graphic cards. On the other hand, we get an ultimate security layer - the more computers there are in the network, the harder it gets to manipulate the data and attack the network. Most probably it is also one of the reason why Bitcoin, and few other big cryptocurrencies are so expensive. Their value also derives from the scale of how many computers are supporting them, how many people had to spend a lot of money, and time for the equipment, electricity, and the Internet bills.
 
 <br>
 
@@ -21,7 +21,7 @@ Before we dive into the code and start building our own crypto token, let's answ
 
 <br>
 
-There is a lot of hype around WEB3 possibly replacing WEB2 in the nearest future. However, after reading the intro you may already have clue that it not necessary a good idea. Even though, there are many advantages of decentralization and blockchain, it's rather good for storing very sensitive data, than for storing huge static files and other generic things. It would cost millions to decentralize literally everything on the Internet, plus everything could slow down a lot becoming almost unusable. Most of the time, the architecture of the Web3 apps is not very different from what we already know from Web2, and it's more of an extension to the current stack than the replacement. Below you can see the simplest representation of the web2 and web3 app. Some people also tend to think that blockchain can be a replacement for the traditional backend, what is partly true and even possible to do, but in any bigger production it would be too expensive and slow. That is why, blockchain is most of the time added at the top of this technologies, to add additional layer of security.
+There is a lot of hype around WEB3 possibly replacing WEB2 in the nearest future. However, after reading the intro you may already have clue that it not necessary a good idea. Even though, there are many advantages of decentralization and blockchain, it's rather good for storing very sensitive data, than for storing huge static files, and other generic things. It would cost millions to decentralize literally everything on the Internet, plus it could slow down many processes, and make this technology almost unusable. Most of the time, the architecture of the Web3 apps is not very different from what we already know from Web2, and it's more of an extension to the current stack than the replacement. Below you can see the simplest representation of the web2 and web3 apps. Some people also tend to think that blockchain can be a replacement for the traditional backend, what is partly true and even possible to do, but in any bigger production it would be too expensive and slow. That is why, blockchain is most of the time added at the top of this technologies, to add additional layer of security.
 
 <br>
 
@@ -33,14 +33,14 @@ There is a lot of hype around WEB3 possibly replacing WEB2 in the nearest future
 
 <br>
 
-In this particular tutorial, we are going to use several technologies, but the only prerequisite is knowing basics of JavaScript and having Node.js installed on your computer. Below you can find a list of the technologies, libraries, and services that we will be using in this tutorial, with related links and short description.
+In this particular tutorial, we are going to use several technologies, but the only prerequisite is knowing basics of JavaScript, and having Node.js installed on your computer. Below you can find a list of the technologies, libraries, and services that we will be using in this tutorial, with related links and short description.
 
 <br>
 
 - [Node.js](https://nodejs.org/en/download/) - JavaScript Runtime
-- [Metmask](https://metamask.io/) - Crypto Wallet that stores our address which is our ID number or profile in the decentralized world
-- [Solidity](https://docs.soliditylang.org/en/v0.8.11/) - a programming language used for programming decentralized apps
-- [Hardhat](https://hardhat.org/) - a JavaScript library that works as an environment for compiling, deploying, testing, and testing decentralized applications written in Solidity
+- [Metmask](https://metamask.io/) - Crypto Wallet that stores our address which is our ID number or/and profile in the decentralized world
+- [Solidity](https://docs.soliditylang.org/en/v0.8.11/) - a programming language used for building decentralized apps
+- [Hardhat](https://hardhat.org/) - a JavaScript library that works as an environment for compiling, deploying, and testing decentralized applications written in Solidity
 - [Alchemy](https://www.alchemy.com/) - a service that works as a bridge between our local project and real blockchain
 
 <br>
@@ -53,7 +53,7 @@ Node.js (especially versions 16 and higher) is the only thing that you will need
 
 <br>
 
-First of all, open some empty folder where you would like to create the project, and then open the terminal. From the terminal we will create a new directory, initiate a new node.js project, and install hardhat library. Just enter the following commands:
+First of all, open an empty folder where you would like to create the project, and then open the terminal. From the terminal we will create a new directory, initiate a new node.js project, and install hardhat library. Just enter the following commands:
 
 <br>
 
@@ -66,7 +66,7 @@ npm install hardhat --save-dev
 
 <br>
 
-Once you have the project and hardhat library ready, it's time to create a new template structure for our future decentralized application. Just like for example in React we have `npx create-react-app <nameoftheapp>` command, very similarly we create an example project with hardhat. For this purpose, enter following command: `npx hardhat`. This command will start the process of creating a new application, just hit enter for everything.
+Once you have the project and hardhat library ready, it's time to create a new template structure for our future decentralized application. Just like in case of React, where we have `npx create-react-app <nameoftheapp>` command, hardhat allows us to do a very similar thing. For this purpose, enter following command: `npx hardhat`. This command will start the process of creating a new application, just hit enter for everything.
 
 <br>
 
@@ -74,7 +74,7 @@ Once you have the project and hardhat library ready, it's time to create a new t
 
 <br>
 
-After installing all of the dependencies your package.json file should look more or less like that:
+After installing all of the dependencies, your package.json file should look more or less like that:
 
 <br>
 
@@ -113,7 +113,7 @@ If some of the libraries are missing, feel free to install them manually. Now it
 
 <br>
 
-In the first one, we will add Solidity code which will be later compiled to the machine code by hardhat library. The second one is for JavaScript scripts, that will let us deploy or/and interact with our application on the blockchain. Test just like name reveals, is the place where we store test files to check if our code written in Solidity works fine, before deploying it to the blockchain. For now, you can just delete all of the files inside of those folders, as we will create everything from scratch. There should be also one more file called `hardhat.config.js` in the main directory, and it's the file which will work as a configuration for our whole project but will move on to it later.
+In the first one, we will add Solidity code which will be later compiled to the machine code by hardhat library. The second one is for JavaScript scripts, that will let us deploy or/and interact with our application on the blockchain. Test just like name reveals, is the place where we store test files to check if our code written in Solidity works fine, before deploying it to the blockchain. For now, you can just delete all of the files inside of those folders, as we will create everything from scratch. There should be also one more file called `hardhat.config.js` in the main directory, and it's the file which will work as a configuration for our whole project, but will move on to it later.
 
 <br>
 
@@ -169,10 +169,10 @@ Just take a while and study the code, if you are familiar with programming in ge
 
 - First two lines indicate the license and Solidity compiler version
 - **contract** - basically just like **class** in other languages
-- **mapping** - something like **map** in JavaScript or dictionary in other languages, that let's store key: value pairs
+- **mapping** - something like **map** in JavaScript or dictionary in other languages, that let us store key: value pairs
 - \*_address_ - a special type of hexadecimal string with the public address of a given person's wallet
 - **msg.sender** - a global variable that always points to the address of the person who called the given function
-- **constructor** runs only once, and it happens when we deploy the instance of our contract to the blockchain
+- **constructor** - runs only once, when we deploy the instance of our contract to the blockchain
 
 <br>
 
@@ -188,7 +188,7 @@ Like it was mentioned before, Solidity is a compiled language and has to be comp
 
 <br>
 
-When it comes to the traditional apps, we have something called API (Application Programming Interface) which is a way of interacting with a given code between two abstract environments. In the world of Web3 a very similar pattern exists, but here it's called ABI (Application Binary Interface) which is in fact some sort of a lower level of API. When we compile our contract, a new directory is created in the root of the project, and when you go to the
+When it comes to the traditional apps, we have something called API (Application Programming Interface) which is a way of interacting with a given code between two abstract environments. In the world of WEB3, this pattern is called ABI (Application Binary Interface) which is in fact some sort of a lower level of API. When we compile our contract, a new directory is created in the root of the project, and when you go to the
 
 <br>
 
@@ -206,7 +206,7 @@ you will see that there a json file with a set of instructions and the bytecode 
 
 <br>
 
-Do you remember that blockchain is **immutable** ? Well, this is one of the reasons why we have to be very careful and test our contract before deploying it to the blockchain. Moreover, as you know our contracts may be related with a huge money, so the smallest mistake in the code may cost millions. Fortunately, we can test our contract without need to pay for anything or even without deploying it to the blockchain. Instead, we can create a local blockchain on our computer, that will simulate the real one, and execute the functions and test on this local instance. Hardhat also comes with the necessary tools, so it will deal with all of the logic of creating the local blockchain behind the scenes. Go to the `test` folder and create a new file called **HelloWorldToken.test.js**. Inside of this file you can add the following code:
+Do you remember that blockchain is **immutable** ? Well, this is one of the reasons why we have to be very careful and test our contract before deploying it to the blockchain. Moreover, as you know our contracts may be related with a huge money, so the smallest mistake in the code may cost millions. Fortunately, we can test our contract for free, and even we don't have to deploy it to the blockchain. Instead, we create a local blockchain on our computer, that will simulate the real one, to execute and test our contract's functions. Hardhat has all of the tools built-in, therfore there is no need to worry about the rest. Go to the `test` folder and create a new file called **HelloWorldToken.test.js**. Inside of this file you can add the following code:
 
 <br>
 
@@ -267,7 +267,7 @@ After that, go back to the terminal and run the test by executing the following 
 
 <br>
 
-Our Solidity code is ready and compiled, tests are passing, but still it's available only on our local machine, so what is the purpose of it? It's like having website only on our hard drive. To let others interact with it, we have to deploy it to the real blockchain, and to do that we will need a crypto wallet and some blockchain node. We need the first one, to pay for the deployment as deployment process is a "write" operation, and it does introduce changes to the blockchain which have to be approved by all of the supporters what generates costs. We also need a blockchain node, to connect with a given network and upload our code from our computer to the blockchain network. In fact there are many wallets, and node providers but for the sake of simplicity we will stick to Metamask, Alchemy, and Ethereum Rinkeby Test Network. First of all we have to create a Metamask wallet, the process is super simple but if you have some problems you can just follow the guid that can be found [here](https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask). After setting up the Metamask account, there is one more important detail, as we are not going to deploy our application to the Ethereum Mainnet because every operation there costs real Ethereum and real money. Instead we are going to use Ethereum Rinkeby testnet, which just like name says is just a test version of Ethereum network, where we also have to pay for the operations, but we can get some free test Ethereum from a faucet. Before we get some free test Ethereum, we should switch to the test network in our Metamask - to do that just click on the Metamask extension, click networks and select Rinkeby. If you cannot see any test networks, you may need to turn them on from the options. Nevertheless, you should see something like on the picture below.
+Our Solidity code is ready and compiled, tests are passing, but still it's available only on our local machine, so what is the purpose of it? It's like having website only on our hard drive. To let others interact with it, we have to deploy it to the real blockchain, and to do that we will need a crypto wallet and some blockchain node. First one is necessary, to pay for the deployment as deployment process is a "write" operation, and it does introduce changes to the blockchain which have to be approved by all of the supporters what generates costs. We also need a blockchain node, to connect with a given network and upload our code from our computer to the blockchain network. In fact there are many wallets, and node providers, but for the sake of simplicity we will stick to Metamask, Alchemy, and Ethereum Rinkeby Test Network. First of all we have to create a Metamask wallet, the process is super simple but if you have some problems you can just follow the guide that can be found [here](https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask). After setting up the Metamask account, there is one more important detail - we are not going to deploy our application to the Ethereum Mainnet, because every operation there costs real Ethereum and real money. Instead we are going to use Ethereum Rinkeby testnet, which is just like name says, a test version of Ethereum network. Unfortunately, we also have to pay for the transactions there, but we can get some free test Ethereum from a faucet. Before we get some free test Ethereum, we should switch to the test network in our Metamask - to do that just click on the Metamask extension, click networks and select Rinkeby. If you cannot see any test networks, you may need to turn them on in settings. Nevertheless, you should see something like on the picture below.
 
 <br>
 
@@ -275,7 +275,7 @@ Our Solidity code is ready and compiled, tests are passing, but still it's avail
 
 <br>
 
-When your Metamask account is ready, it's time to get some free test Ethereum. You can get some from [here](https://faucets.chain.link/rinkeby) Just copy-paste your public address from the metamask, enter the address, and submit. You should get 0.1 eth on your account within a couple of minutes. It will be more than enough to deploy our application. There is one more point missing and it's a blockchain node. Actually, we could run our own node but it would be very complicated and time consuming, that is why we can use services such as [Alchemy](https://alchemy.com/?r=552689cf93f064ec). Just go to [Alchemy](https://alchemy.com/?r=552689cf93f064ec) and create a new account. The process is quite straightforward so I won't explain it here, after registration create a new app an be sure to select **Ethereum** Chain, **Staging** environment and **Rinkeby** network. It should look more or less like on the picture below.
+When your Metamask account is ready, it's time to get some free test Ethereum. You can get some from [here](https://faucets.chain.link/rinkeby) Just copy-paste your public address from the metamask, enter the address, and submit. You should get 0.1 eth on your account within a couple of minutes. It will be more than enough to deploy our application. There is one more point missing and it's a blockchain node. Actually, we could run our own node, but it would be very complicated and time consuming, that is why we can use services such as [Alchemy](https://alchemy.com/?r=552689cf93f064ec). Just go to [Alchemy](https://alchemy.com/?r=552689cf93f064ec) and create a new account. The process is quite straightforward so I won't explain it here, after registration create a new app, and be sure to select **Ethereum** Chain, **Staging** environment and **Rinkeby** network. It should look more or less like on the picture below.
 
 <br>
 
@@ -319,7 +319,7 @@ As you may see we are using some sensitive information here, and we need dotenv 
 
 <br>
 
-For now, you can skip the CONTRACT_ADDRESS key, while the API_URL and API_KEY can be found on the Alchemy website under "VIEW KEY" button, as a "HTTP" key. And your private key to your address can be extracted from the Metamask like [that](https://metamask.zendesk.com/hc/en-us/articles/360015289632) However, **NEVER EVER SHARE YOUR PRIVATE KEY WITH ANYONE**. That is why, I also suggest not using this account for real transactions.
+For now, you can skip the CONTRACT_ADDRESS key. API_URL and API_KEY can be found on the Alchemy website under "VIEW KEY" button, as a "HTTP" key. Your private key to your address can be extracted from the Metamask like [that](https://metamask.zendesk.com/hc/en-us/articles/360015289632) However, **NEVER EVER SHARE YOUR PRIVATE KEY WITH ANYONE**. That is why, I also suggest not to use this account for real transactions.
 
 <br>
 
@@ -351,7 +351,7 @@ Now, it's final time to deploy our smart contract to the blockchain, there is on
 
 <br>
 
-The last point is executing a following command:
+The last point is executing the following command:
 
 <br>
 
@@ -379,7 +379,7 @@ Congratulations! Your contract has been successfully deployed to the blockchain!
 
 <br>
 
-Now our contract is ready, tested, and deployed but how can we interact with it? Copy the address of the contract to the .env file, open scripts folder, create a new file, call it "interact.js", and add the following code:
+Now our contract is ready, tested, and deployed, but how can we interact with it? Copy the address of the contract to the .env file, open scripts folder, create a new file, call it "interact.js", and add the following code:
 
 <br>
 
@@ -437,7 +437,7 @@ npx hardhat run scripts/interact.js
 
 <br>
 
-If everything goes OK, you should see the basic information about your token, right from the blockchain. Moreover, you can also add your token to the Metamask wallet. To do that just click on the `import token` button, then paste the address of your token contract and write 0 as a decimal places. When you click import, you should see 1000 Tokens. When you go to **"https://rinkeby.etherscan.io/token/"** and add the address of your contract to the end of the link, you should also see some extra info about your token, such as a list of the holders. Currently it will be just you, since you were the person who deployed the contract, and as you may remember in the `constructor` we set the total supply of the token, to our own account.
+If everything goes OK, you should see the basic information about your token, right from the blockchain. Moreover, you can also add your token to the Metamask wallet. To do that just click on the `import token` button, then paste the address of your token contract, and set 0 as a decimal places. When you click import, you should see 1000 Tokens. When you go to **"https://rinkeby.etherscan.io/token/"** and add the address of your contract to the end of the link, you should also see some extra info about your token. Currently it will be just you, since you were the person who deployed the contract, and as you may remember in the `constructor` we assign the total supply of the token, to our own account.
 
 <br>
 
@@ -449,4 +449,4 @@ Repository with the related code can be found [here](https://github.com/Kowalews
 
 <br>
 
-Congratulations once again! Now you can send your token to the others, but not much more than that. Our Token is a custom token, that doesn't meet any standards, which of course exists in the crypto world. Even if you wanted to deploy it to the mainnet, it would be probably a waste of money. Also this was just a demonstration, you can treat it as a boilerplate to create your own tokens or NFTs, but you should definitely write them according to the standards, or build a decentralized app. What is more, is that I have used Hardhat, Metamask, and Ethereum Rinkeby testnet, but it there are plenty more of other technologies out there which work in a similar way. Once you get the concept of the smart contract world, changing the technology should be an obstacle for your. There is also one more part missing, and it's of course a frontend app to connect it all, in a concise whole but since this tutorial is already very long, you may find the tutorial about that issue in the nearest future.
+Congratulations once again! Now you can send your token to the others, but nothing more than that. Our Token is a custom token, that doesn't meet any standards, which of course exist in the crypto world. Even if you wanted to deploy it to the mainnet, it would be probably a waste of money. Also this was just a demonstration, you can treat it as a boilerplate to create your own tokens or NFTs, but you should definitely build them according to the standards such as ERC-20 or ERC-721. Moreover, I have used Hardhat, Metamask, and Ethereum Rinkeby testnet, but there are many other technologies out there, which would work as well. Once you get the concept of creating smart contracts, switching to a new technology shouldn't be an obstacle for you. There is also one more missing part - frontend app to make the communcation with our app/token easier. You can either try to create one now, or check my other tutorials where this kind of article may show up. :)
