@@ -3,12 +3,16 @@ import styled from "styled-components";
 import { getColor, getMedias } from "../../styles/utils";
 
 const PostPageArticle = styled.article`
-  margin: 2rem auto 2rem 25rem;
+  margin: 2rem 22.5vw;
   width: 80%;
 
   @media (max-width: ${getMedias("desktop")}) {
-    margin: 2rem;
+    margin: 2rem 15vw;
     width: 90%;
+  }
+
+  @media (max-width: ${getMedias("tablet")}) {
+    margin: 2rem;
   }
 
   & > pre {
