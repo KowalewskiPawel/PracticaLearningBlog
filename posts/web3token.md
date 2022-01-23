@@ -66,7 +66,7 @@ npm install hardhat --save-dev
 
 <br>
 
-Once you have the project and hardhat library ready, it's time to create a new template structure for our future decentralized application. Just like in case of React, where we have `npx create-react-app <nameoftheapp>` command, hardhat allows us to do a very similar thing. For this purpose, enter following command: `npx hardhat`. This command will start the process of creating a new application, just hit enter for everything.
+Once you have the project and hardhat library ready, it's time to create a new template structure for our future decentralized application. Just like in case of React, where we have "npx create-react-app nameoftheapp command", hardhat allows us to do a very similar thing. For this purpose, enter following command: `npx hardhat`. This command will start the process of creating a new application, just hit enter for everything.
 
 <br>
 
