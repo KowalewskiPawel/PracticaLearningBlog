@@ -11,7 +11,7 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>Pracitcal Learning</title>
+        <title>Practical Learning</title>
       </Head>
 
       <Posts>
