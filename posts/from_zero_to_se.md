@@ -5,21 +5,21 @@ excerpt: "How to change/get a more meaningful job as Software Engineer without a
 cover_image: "/assets/posts/expectations.jpg"
 ---
 
-How to change/get a more meaningful job as Software Engineer without a degree and experience? At first sight, it may sound ridiculous and impossible, but with rapid changes in the world and technology surrounding us it may become a necessity for many people around the world. For me it was something more personal, nevertheless there were many ocassions when I was simply losing my hopes for getting a dream job.
+Have you ever thought - how to get a more meaningful job as a Software Engineer, without a degree and experience? At first sight, it may sound ridiculous and impossible, but with rapid changes in our everyday lives, it may become a necessity for many people around the world. In my case, it was something a bit more personal, nevertheless there were many ocassions when I was simply losing the hope of getting a dream job.
 
 <br>
  
-Long story short, if you don't want to read the whole story I can just tell you that yes I have got a job as Software Engineer without any CS degree, boot camp. It took me more or less 3 years from the first idea to getting a full-time decent job, no one referred me, and everything was happening in Turkey and Poland, so we are not talking about realities in the USA, not even Western Europe. :) Side fact was that I was nearly 30 years old, not a Math genius nor a computer freak, and spent my whole life working in jobs completely not related to IT.
+Long story short, if you don't want to read the whole story - yes, I got a job as Software Engineer without any CS degree or boot camp. It took me more or less - 3 years, from the first lines of code, to getting a full-time decent job. Moreover, no one referred me, and everything was happening in Turkey and Poland, so we are not talking about realities in the USA, not even Western Europe. :) As a side fact - I was nearly 30 years old, not a Math genius nor a computer freak, and spent my whole life working in jobs completelly unrelated to the IT world.
 
 <br>
  
-In terms of technologies, I mostly focused on web development, to be more precise JavaScript and related stuff. After sending hundreds of CVs and having dozens of interviews for a Web Developer/ Frontend Developer/ Fullstack Developer/ JavaScript Developer, below I prepared the list of the necessary technologies.
+In terms of technologies, I focused mianly on the web development, to be more precise - JavaScript and related technologies. During my journe I have sent hundreds of CVs and had dozens of interviews for a Web Developer/ Frontend Developer/ Fullstack Developer/ JavaScript Developer. Below you can find the list of the technologies, that I consider as necessary to start a job as web developer:
 
 <br>
  
 - JavaScript (learn it well!)
-- HTML (understand especially the difference between block and inline elements, and how DOM works with JavaScript)
-- CSS (knowing positioning, plus flexbox and grid should be enough)
+- HTML (especially, understand the difference between block and inline elements, and how DOM works with JavaScript)
+- CSS (box-model, positioning, flexbox, and grid should be enough)
 - Git (command line, creating repositories, switching branches, committing changes)
 - GitHub (Code reviews, Pull Requests)
 - Frontend framework/library (React/ Angular/ Vue)
