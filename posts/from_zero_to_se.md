@@ -32,11 +32,11 @@ In terms of technologies, I focused mianly on the web development, to be more pr
 
 <br>
  
-Having good basics both theoretically and practically, plus some work in a team (internship/ open source) that you can prove with a live website/ code on GitHub, should be more than enough to land a first job. It's not going to be easy of course, and prepare yourself for possibly not getting any feedback even after sending dozens/ hundreds of CVs, you will for sure have better and worse days, feeling stuck, and losing hope for any success. That's OK, just keep going, find some meetups or people on programming groups on Discord/ Slack and try to cooperate with them and everything will be fine. If you have any questions don't hesitate to send me a message.
+Additioanlly, you should have solid knowledge of the basics, both in theory and practice. For example, some work done in a team (internship/ open source) that you can present as a live website and code on GitHub, should be more than enough to land a first job. Yet, it's not going to be easy - prepare yourself for possibly not getting any feedback, even after sending dozens/ hundreds of CVs. For sure, there will be better and worse days, you may even endup feeling stuck for weeks or months, and lose hope for any success. That's OK, just keep going, join some local meetups (either onsite or online), find some coding-mates, and everything will be fine. If you have any questions - don't hesitate to text me.
 
 <br>
  
-Still here? If you want to read my story from the very beginning just scroll down.
+Still here? If you want to read my story from the very beginning, just scroll down.
 
 <br>
  
